@@ -1,18 +1,17 @@
 {
   "personalInfo": {
-    "name": "Your Name",
-    "title": "Your Professional Title",
-    "email": "your.email@example.com",
-    "location": "Your Location",
-    "summary": "Brief professional summary about yourself"
+    "name": "René Lázaro Collado Arteaga",
+    "title": "Full Stack Developer",
+    "email": "renearteaga261998@gmail.com",
+    "location": "Habana, Cuba",
+    "summary": "Desarrollador web especializado en el Backend con más de dos años de experiencia en el desarrollo de aplicaciones web y un fuerte interés en la arquitectura y el diseño de software. Capaz de trabajar en equipo o de manera independiente, con gran capacidad de análisis y resolución de problemas. Experiencia en el desarrollo de aplicaciones web usando Django Rest Framework, Flask y su unión con tecnologías frontend como Vue."
   },
   "contact": {
-    "email": "your.email@example.com",
-    "phone": "+1234567890",
-    "linkedin": "https://linkedin.com/in/yourprofile",
-    "github": "https://github.com/yourusername",
-    "twitter": "https://twitter.com/yourhandle",
-    "location": "Your City, Country"
+    "email": "renearteaga261998@gmail.com",
+    "phone": "+5351251511",
+    "linkedin": "www.linkedin.com/in/rene-lazaro-collado-arteaga-447335245",
+    "github": "https://github.com/critBus",
+    "location": "Habana, Cuba"
   },
   "experience": [
     {
@@ -22,7 +21,11 @@
       "startDate": "2023-01",
       "endDate": "Present",
       "description": "Description of your role and achievements",
-      "technologies": ["Tech1", "Tech2", "Tech3"]
+      "technologies": [
+        "Tech1",
+        "Tech2",
+        "Tech3"
+      ]
     }
   ],
   "projects": {
@@ -31,7 +34,10 @@
         "id": 1,
         "name": "Project Name",
         "description": "Project description",
-        "technologies": ["React", "Node.js"],
+        "technologies": [
+          "React",
+          "Node.js"
+        ],
         "link": "https://github.com/yourusername/project",
         "demo": "https://project-demo.com"
       }
@@ -50,8 +56,29 @@
     }
   ],
   "skills": {
-    "programming": ["JavaScript", "TypeScript", "Python", "Java"],
-    "frameworks": ["React", "Next.js", "Node.js"],
-    "tools": ["Git", "Docker", "AWS"]
+    "Programación": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java",
+      "C#"
+    ],
+    "Frameworks": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Django Rest Framework",
+      "Flask"
+    ],
+    "Herramientas": [
+      "Git",
+      "Github",
+      "Docker"
+    ],
+    "Bases de Datos": [
+      "PostgreSQL",
+      "SQLServer",
+      "Neo4j"
+    ]
   }
 }

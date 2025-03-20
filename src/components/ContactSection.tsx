@@ -9,7 +9,7 @@ const ContactSection = () => {
     { icon: '📱', label: 'Teléfono', value: contact.phone, href: `tel:${contact.phone}` },
     { icon: '💼', label: 'LinkedIn', value: 'LinkedIn', href: contact.linkedin },
     { icon: '💻', label: 'GitHub', value: 'GitHub', href: contact.github },
-    { icon: '🐦', label: 'Twitter', value: 'Twitter', href: contact.twitter },
+    // { icon: '🐦', label: 'Twitter', value: 'Twitter', href: contact.twitter },
     { icon: '📍', label: 'Ubicación', value: contact.location },
   ];
 
