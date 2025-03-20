@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 interface Project {
   id: number;
   name: string;
-  description: string;
+  description: string[];
   technologies: string[];
   link?: string;
   demo?: string;

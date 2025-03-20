@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 interface ProjectCardProps {
   name: string;
-  description: string;
+  description: string[];
   technologies: string[];
   link?: string;
   demo?: string;
@@ -13,7 +13,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, technologi
   return (
     <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <h3 className="text-xl font-bold mb-2">{name}</h3>
-      <p className="text-gray-600 dark:text-gray-300 mb-4">{description}</p>
+      <ul className="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside">
+        {description.map((point, index) => (
+          <li key={index}>{point}</li>
+        ))}
+      </ul>
       <div className="flex flex-wrap gap-2 mb-4">
         {technologies.map((tech, index) => (
           <span
@@ -29,6 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, technologi
           <Link 
             href={link}
             target="_blank"
+            rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
             GitHub
@@ -38,6 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ name, description, technologi
           <Link
             href={demo}
             target="_blank"
+            rel="noopener noreferrer"
             className="text-green-600 dark:text-green-400 hover:underline"
           >
             Demo

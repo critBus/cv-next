@@ -21,23 +21,20 @@
       "startDate": "2023-01",
       "endDate": "Present",
       "description": "Description of your role and achievements",
-      "technologies": [
-        "Tech1",
-        "Tech2",
-        "Tech3"
-      ]
+      "technologies": ["Tech1", "Tech2", "Tech3"]
     }
   ],
   "projects": {
-    "JavaScript": [
+    "Django": [
       {
         "id": 1,
         "name": "Project Name",
-        "description": "Project description",
-        "technologies": [
-          "React",
-          "Node.js"
+        "description": [
+          "Primer punto de la descripción",
+          "Segundo punto de la descripción",
+          "Tercer punto de la descripción"
         ],
+        "technologies": ["React", "Node.js"],
         "link": "https://github.com/yourusername/project",
         "demo": "https://project-demo.com"
       }
@@ -56,29 +53,9 @@
     }
   ],
   "skills": {
-    "Programación": [
-      "JavaScript",
-      "TypeScript",
-      "Python",
-      "Java",
-      "C#"
-    ],
-    "Frameworks": [
-      "React",
-      "Next.js",
-      "Node.js",
-      "Django Rest Framework",
-      "Flask"
-    ],
-    "Herramientas": [
-      "Git",
-      "Github",
-      "Docker"
-    ],
-    "Bases de Datos": [
-      "PostgreSQL",
-      "SQLServer",
-      "Neo4j"
-    ]
+    "Programación": ["JavaScript", "TypeScript", "Python", "Java", "C#"],
+    "Frameworks": ["React", "Next.js", "Node.js", "Django Rest Framework", "Flask"],
+    "Herramientas": ["Git", "Github", "Docker"],
+    "Bases de Datos": ["PostgreSQL", "SQLServer", "Neo4j"]
   }
 }

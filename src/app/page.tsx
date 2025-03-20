@@ -15,25 +15,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <main className="container mx-auto px-4 py-12 max-w-6xl flex flex-col items-center">
-        {/* Header/Intro Section */}
         <HeaderIntroSection />
-
-        {/* Skills Section */}
         <SkillsSection />
-
-        {/* Experience Timeline */}
         <div className="mb-16 w-full max-w-4xl">
           <ExperienceSection experiences={cvData.experience} />
         </div>
-
-        {/* Projects Section */}
         <div className="mb-16 w-full">
           <ProjectsSection projects={cvData.projects} />
         </div>
-
-
-
-        {/* Contact Section */}
         <ContactSection />
       </main>
     </div>
