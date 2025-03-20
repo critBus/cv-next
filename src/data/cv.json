@@ -70,6 +70,24 @@
         ],
         "link": "https://github.com/BigCatalyst/CinemaManagement",
         "demo": ""
+      },
+      {
+        "id": 4,
+        "name": "MuseoJaruqueño",
+        "description": [
+          "Se trata de un sitio web en el que colaboré en su creación, usando la tecnología Django. Este sitio está diseñado para administrar de manera efectiva la información del museo local y permitir que los trabajadores del centro actualicen y manejen información relevante sobre los diferentes artículos que se exhiben en la institución, incluyendo su descripción histórica, origen y ubicación.",
+          "Los visitantes tienen acceso a una descripción detallada del museo y su historia, y pueden obtener información actualizada sobre las exposiciones y actividades que involucran a la institución. Mi contribución en la creación de este sitio web fue en el diseño y desarrollo del sistema, incluyendo la implementación de lógicas de negocios personalizadas y la creación de funciones para facilitar la administración de la información."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "link": "https://github.com/critBus/SitioMuseo",
+        "demo": ""
       }
     ],
     "Django Rest Framework": [
