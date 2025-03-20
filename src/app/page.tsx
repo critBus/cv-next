@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import cvData from "@/data/cv.json";
 import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
+import EducationSection from "@/components/EducationSection";
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <>
       <SkillsSection />
+      <EducationSection />
       <div className="mb-16 w-full max-w-4xl">
         <ExperienceSection experiences={cvData.experience} />
       </div>

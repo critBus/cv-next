@@ -169,11 +169,11 @@
   "education": [
     {
       "id": 1,
-      "institution": "University Name",
-      "degree": "Your Degree",
-      "field": "Your Field",
-      "startDate": "2018",
-      "endDate": "2022"
+      "institution": "Universidad de La Habana",
+      "degree": "Licenciado en Ciencias de la Computación",
+      "field": "Informática y Ciencias de la Computación",
+      "startDate": "2016",
+      "endDate": "2021"
     }
   ],
   "skills": {
