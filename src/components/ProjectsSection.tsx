@@ -6,7 +6,7 @@ interface Project {
   name: string;
   description: string[];
   technologies: string[];
-  link?: string;
+  links?: string[];
   demo?: string;
 }
 
@@ -29,7 +29,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                     name={project.name}
                     description={project.description}
                     technologies={project.technologies}
-                    link={project.link}
+                    links={project.links}
                     demo={project.demo}
                   />
                 </div>

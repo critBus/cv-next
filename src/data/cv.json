@@ -49,7 +49,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "link": "https://github.com/critBus/IAEstadosDeMaduracion",
+        "links": ["https://github.com/critBus/IAEstadosDeMaduracion"],
         "demo": ""
       },
       {
@@ -68,7 +68,7 @@
           "CSS",
           "JavaScript"
         ],
-        "link": "https://github.com/BigCatalyst/CinemaManagement",
+        "links": ["https://github.com/BigCatalyst/CinemaManagement"],
         "demo": ""
       },
       {
@@ -86,7 +86,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "link": "https://github.com/critBus/SitioMuseo",
+        "links": ["https://github.com/critBus/SitioMuseo"],
         "demo": ""
       },
       {
@@ -104,7 +104,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "link": "https://github.com/critBus/AdminFabricaRon",
+        "links": ["https://github.com/critBus/AdminFabricaRon"],
         "demo": ""
       }
     ],
@@ -126,7 +126,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "link": "",
+        "links": [],
         "demo": ""
       }
     ],
