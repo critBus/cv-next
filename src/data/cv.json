@@ -9,7 +9,7 @@
   "contact": {
     "email": "renearteaga261998@gmail.com",
     "phone": "+5351251511",
-    "linkedin": "www.linkedin.com/in/rene-lazaro-collado-arteaga-447335245",
+    "linkedin": "https://www.linkedin.com/in/rene-lazaro-collado-arteaga-447335245",
     "github": "https://github.com/critBus",
     "location": "Habana, Cuba"
   },
@@ -49,7 +49,9 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": ["https://github.com/critBus/IAEstadosDeMaduracion"],
+        "links": [
+          "https://github.com/critBus/IAEstadosDeMaduracion"
+        ],
         "demo": ""
       },
       {
@@ -68,7 +70,9 @@
           "CSS",
           "JavaScript"
         ],
-        "links": ["https://github.com/BigCatalyst/CinemaManagement"],
+        "links": [
+          "https://github.com/BigCatalyst/CinemaManagement"
+        ],
         "demo": ""
       },
       {
@@ -86,7 +90,9 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": ["https://github.com/critBus/SitioMuseo"],
+        "links": [
+          "https://github.com/critBus/SitioMuseo"
+        ],
         "demo": ""
       },
       {
@@ -104,7 +110,9 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": ["https://github.com/critBus/AdminFabricaRon"],
+        "links": [
+          "https://github.com/critBus/AdminFabricaRon"
+        ],
         "demo": ""
       },
       {
@@ -122,7 +130,9 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": ["https://github.com/critBus/Nomina"],
+        "links": [
+          "https://github.com/critBus/Nomina"
+        ],
         "demo": ""
       }
     ],
@@ -191,7 +201,7 @@
       "SQLServer",
       "Neo4j"
     ],
-    "IA":[
+    "IA": [
       "Deepface",
       "Tensorflow",
       "Keras"
