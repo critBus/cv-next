@@ -17,12 +17,12 @@ interface ProjectsSectionProps {
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   return (
     <section className="w-full">
-      <h2 className="text-3xl font-bold mb-8">Proyectos</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
       {Object.entries(projects).map(([language, projectList]) => (
         projectList.length > 0 && (
           <div key={language} className="mb-12">
-            <h3 className="text-2xl font-semibold mb-6">{language}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h3 className="text-2xl font-semibold mb-6 text-center">{language}</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
               {projectList.map((project) => (
                 <ProjectCard
                   key={project.id}

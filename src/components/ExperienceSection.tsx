@@ -22,8 +22,8 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
     subtitle: exp.company,
     description: (
       <>
-        <p className="mb-2">{exp.description}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className="mb-2 text-center">{exp.description}</p>
+        <div className="flex flex-wrap gap-2 justify-center">
           {exp.technologies.map((tech, index) => (
             <span
               key={index}
@@ -39,7 +39,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
 
   return (
     <section className="w-full">
-      <h2 className="text-3xl font-bold mb-8">Experiencia Laboral</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Experiencia Laboral</h2>
       <Timeline items={timelineItems} />
     </section>
   );
