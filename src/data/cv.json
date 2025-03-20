@@ -49,11 +49,51 @@
           "JavaScript",
           "Bootstrap"
         ],
+        "link": "https://github.com/critBus/IAEstadosDeMaduracion",
+        "demo": ""
+      },
+      {
+        "id": 3,
+        "name": "CinemaManagement",
+        "description": [
+          "CinemaManagement es un sitio web creado para la gestión de un negocio de contenido multimedia y la presentación de un catálogo web para publicitar dicho contenido. Esta herramienta proporciona al administrador la posibilidad de integrar los datos de las películas, series, animes, música y juegos que se tengan en el negocio.",
+          "El sitio web cuenta con potentes buscadores que permiten encontrar fácilmente el contenido multimedia deseado, por ejemplo, mediante la búsqueda de películas por actores o viceversa. Además, el uso de Django como plataforma de desarrollo y Postgres como base de datos, proporciona un manejo de la información mucho más organizado y seguro.",
+          "El sistema permite a los clientes explorar fácilmente el catálogo completo del negocio, ver las especificaciones de cada uno de los contenidos multimedia y revisar su disponibilidad. De esta manera, el sistema facilita la administración y venta de contenido multimedia, así como el proceso de selección y compra para los clientes.",
+          "CinemaManagement es una herramienta útil para administradores y propietarios de negocios que desean mejorar la gestión y promoción de su contenido multimedia, al mismo tiempo que ofrecen a sus clientes una experiencia de navegación cómoda y fácil."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "link": "https://github.com/BigCatalyst/CinemaManagement",
+        "demo": ""
+      }
+    ],
+    "Django Rest Framework": [
+      {
+        "id": 2,
+        "name": "IAEstadosDeMaduracion",
+        "description": [
+          "IAEstadosDeMaduracion es una plataforma web completa en Django, diseñada para proporcionar una plataforma de entrenamiento de sistemas de visión por computadoras basados en redes convolucionales. Esta herramienta permite a los usuarios almacenar y gestionar datasets de imágenes de frutos, que posteriormente pueden ser utilizados para el entrenamiento de una red neuronal convolucional."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "IA",
+          "Tensorflow",
+          "Keras",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
         "link": "",
         "demo": ""
       }
     ],
-    "Python": [],
     "Java": []
   },
   "education": [
