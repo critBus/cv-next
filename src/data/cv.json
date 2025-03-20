@@ -88,6 +88,24 @@
         ],
         "link": "https://github.com/critBus/SitioMuseo",
         "demo": ""
+      },
+      {
+        "id": 5,
+        "name": "Gestión Instituciones",
+        "description": [
+          "Sitio web para la gestión de la información sobre las instituciones productivas y tecnologías existentes en el país. En el se permite a sus clientes la visualización de la ubicación geográfica de las instituciones, así como la obtención de los datos filtrados y organizados en formatos como PDF o EXEL.",
+          "Para el desarrollo de este proyecto se utilizó Django. Para el frontend del cliente se utilizó bootstrap 5, con Leaflet y amCharts para mostrar la ubicación geográfica de las instituciones. Para el frontend de la administración se utilizó las herramientas que provee django. Para almacenar los datos se utilizó PostgreSQL."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "link": "https://github.com/critBus/AdminFabricaRon",
+        "demo": ""
       }
     ],
     "Django Rest Framework": [
