@@ -9,19 +9,17 @@ export default function ProjectsPage() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <main className="container mx-auto px-4 py-12 max-w-6xl flex flex-col items-center">
         <div className="w-full max-w-5xl">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="inline-flex items-center text-blue-500 hover:text-blue-700 mb-12 transition-colors"
           >
             <span className="mr-2">←</span>
             Volver al CV
           </Link>
-          
+
           <ProjectsSection projects={cvData.projects} />
-          
-          <footer className="mt-24">
-            <ContactSection />
-          </footer>
+
+
         </div>
       </main>
     </div>
