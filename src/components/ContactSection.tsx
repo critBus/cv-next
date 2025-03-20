@@ -14,7 +14,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="w-full max-w-4xl mb-16">
+    <section className="w-full max-w-4xl mb-16 mt-5">
       <h2 className="text-3xl font-bold mb-8 text-center">Contacto</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {contactItems.map((item, index) => (
