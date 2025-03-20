@@ -6,6 +6,14 @@
     "location": "Your Location",
     "summary": "Brief professional summary about yourself"
   },
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "+1234567890",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourusername",
+    "twitter": "https://twitter.com/yourhandle",
+    "location": "Your City, Country"
+  },
   "experience": [
     {
       "id": 1,
