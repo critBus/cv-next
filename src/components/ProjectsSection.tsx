@@ -22,9 +22,9 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
         projectList.length > 0 && (
           <div key={language} className="mb-12">
             <h3 className="text-2xl font-semibold mb-6 text-center">{language}</h3>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-col justify-center gap-6">
               {projectList.map((project) => (
-                <div key={project.id} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md">
+                <div key={project.id} className="w-full">
                   <ProjectCard
                     name={project.name}
                     description={project.description}
