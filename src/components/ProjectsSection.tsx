@@ -22,16 +22,17 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
         projectList.length > 0 && (
           <div key={language} className="mb-12">
             <h3 className="text-2xl font-semibold mb-6 text-center">{language}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            <div className="flex flex-wrap justify-center gap-6">
               {projectList.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  name={project.name}
-                  description={project.description}
-                  technologies={project.technologies}
-                  link={project.link}
-                  demo={project.demo}
-                />
+                <div key={project.id} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-md">
+                  <ProjectCard
+                    name={project.name}
+                    description={project.description}
+                    technologies={project.technologies}
+                    link={project.link}
+                    demo={project.demo}
+                  />
+                </div>
               ))}
             </div>
           </div>
