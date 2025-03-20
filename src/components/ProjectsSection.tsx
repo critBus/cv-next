@@ -1,6 +1,7 @@
 "use client"
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import ProjectCard from './ProjectCard';
+import { FaArrowUp } from 'react-icons/fa';
 
 interface Project {
   id: number;
@@ -17,6 +18,8 @@ interface ProjectsSectionProps {
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([]);
+  const [showScrollButton, setShowScrollButton] = useState(false);
+  const filtersRef = useRef<HTMLDivElement>(null);
 
   // Extract all unique technologies from all projects
   const allTechnologies = useMemo(() => {
@@ -59,12 +62,27 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     setSelectedTechnologies([]);
   };
 
+  const scrollToFilters = () => {
+    filtersRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const threshold = 500; // Show button after scrolling 500px
+      setShowScrollButton(scrollY > threshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className="w-full">
       <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
 
       {/* Technology filters */}
-      <div className="mb-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
+      <div ref={filtersRef} className="mb-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
         <div className="flex flex-col items-center gap-4">
           <div className="flex flex-wrap gap-2 justify-center">
             {allTechnologies.map(tech => (
@@ -124,6 +142,17 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
           )
         ))}
       </div>
+
+      {/* Floating scroll to top button */}
+      <button
+        onClick={scrollToFilters}
+        className={`fixed bottom-8 right-8 p-4 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-110 ${
+          showScrollButton ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+        }`}
+        aria-label="Scroll to filters"
+      >
+        <FaArrowUp className="text-xl" />
+      </button>
     </section>
   );
 };
