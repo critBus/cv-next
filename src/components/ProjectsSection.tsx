@@ -42,6 +42,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     return filtered;
   }, [projects, selectedTechnologies]);
 
+  // Count total filtered projects
+  const totalFilteredProjects = useMemo(() => {
+    return Object.values(filteredProjects).reduce((acc, projectList) => acc + projectList.length, 0);
+  }, [filteredProjects]);
+
   const toggleTechnology = (tech: string) => {
     setSelectedTechnologies(prev =>
       prev.includes(tech)
@@ -59,54 +64,66 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
       <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
 
       {/* Technology filters */}
-      <div className="mb-8">
-        <div className="flex flex-wrap gap-2 justify-center mb-4">
-          {allTechnologies.map(tech => (
-            <button
-              key={tech}
-              onClick={() => toggleTechnology(tech)}
-              className={`px-3 py-1 rounded-full text-sm transition-colors ${selectedTechnologies.includes(tech)
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100'
+      <div className="mb-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-wrap gap-2 justify-center">
+            {allTechnologies.map(tech => (
+              <button
+                key={tech}
+                onClick={() => toggleTechnology(tech)}
+                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all transform hover:scale-105 ${
+                  selectedTechnologies.includes(tech)
+                    ? 'bg-blue-600 text-white shadow-md'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
-            >
-              {tech}
-            </button>
-          ))}
-        </div>
-        {selectedTechnologies.length > 0 && (
-          <div className="flex justify-center">
-            <button
-              onClick={clearFilters}
-              className="text-blue-600 hover:text-blue-800 text-sm underline"
-            >
-              Limpiar filtros
-            </button>
+              >
+                {tech}
+              </button>
+            ))}
           </div>
-        )}
+          
+          <div className="flex items-center gap-4">
+            {selectedTechnologies.length > 0 && (
+              <>
+                <button
+                  onClick={clearFilters}
+                  className="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline transition-colors"
+                >
+                  Limpiar filtros
+                </button>
+                <span className="text-sm text-gray-500 dark:text-gray-400">•</span>
+              </>
+            )}
+            <span className="text-sm text-gray-600 dark:text-gray-400">
+              {totalFilteredProjects} proyecto{totalFilteredProjects !== 1 ? 's' : ''} encontrado{totalFilteredProjects !== 1 ? 's' : ''}
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* Projects list */}
-      {Object.entries(filteredProjects).map(([language, projectList]) => (
-        projectList.length > 0 && (
-          <div key={language} className="mb-12">
-            <h3 className="text-2xl font-semibold mb-6 text-center">{language}</h3>
-            <div className="flex flex-col justify-center gap-6">
-              {projectList.map((project) => (
-                <div key={project.id} className="w-full">
-                  <ProjectCard
-                    name={project.name}
-                    description={project.description}
-                    technologies={project.technologies}
-                    links={project.links}
-                    demo={project.demo}
-                  />
-                </div>
-              ))}
+      <div className="space-y-16">
+        {Object.entries(filteredProjects).map(([language, projectList]) => (
+          projectList.length > 0 && (
+            <div key={language}>
+              <h3 className="text-2xl font-semibold mb-8 text-center">{language}</h3>
+              <div className="flex flex-col gap-8">
+                {projectList.map((project) => (
+                  <div key={project.id}>
+                    <ProjectCard
+                      name={project.name}
+                      description={project.description}
+                      technologies={project.technologies}
+                      links={project.links}
+                      demo={project.demo}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )
-      ))}
+          )
+        ))}
+      </div>
     </section>
   );
 };

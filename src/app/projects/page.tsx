@@ -6,19 +6,24 @@ import Link from 'next/link';
 
 export default function ProjectsPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-8 md:p-24">
-      <Link 
-        href="/" 
-        className="self-start mb-8 text-blue-500 hover:text-blue-700 flex items-center"
-      >
-        ← Volver al CV
-      </Link>
-      
-      <ProjectsSection projects={cvData.projects} />
-      
-      <footer className="w-full mt-16">
-        <ContactSection />
-      </footer>
-    </main>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <main className="container mx-auto px-4 py-12 max-w-6xl flex flex-col items-center">
+        <div className="w-full max-w-5xl">
+          <Link 
+            href="/" 
+            className="inline-flex items-center text-blue-500 hover:text-blue-700 mb-12 transition-colors"
+          >
+            <span className="mr-2">←</span>
+            Volver al CV
+          </Link>
+          
+          <ProjectsSection projects={cvData.projects} />
+          
+          <footer className="mt-24">
+            <ContactSection />
+          </footer>
+        </div>
+      </main>
+    </div>
   );
 }
