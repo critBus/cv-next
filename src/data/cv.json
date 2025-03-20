@@ -1,0 +1,49 @@
+{
+  "personalInfo": {
+    "name": "Your Name",
+    "title": "Your Professional Title",
+    "email": "your.email@example.com",
+    "location": "Your Location",
+    "summary": "Brief professional summary about yourself"
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Company Name",
+      "position": "Position Title",
+      "startDate": "2023-01",
+      "endDate": "Present",
+      "description": "Description of your role and achievements",
+      "technologies": ["Tech1", "Tech2", "Tech3"]
+    }
+  ],
+  "projects": {
+    "JavaScript": [
+      {
+        "id": 1,
+        "name": "Project Name",
+        "description": "Project description",
+        "technologies": ["React", "Node.js"],
+        "link": "https://github.com/yourusername/project",
+        "demo": "https://project-demo.com"
+      }
+    ],
+    "Python": [],
+    "Java": []
+  },
+  "education": [
+    {
+      "id": 1,
+      "institution": "University Name",
+      "degree": "Your Degree",
+      "field": "Your Field",
+      "startDate": "2018",
+      "endDate": "2022"
+    }
+  ],
+  "skills": {
+    "programming": ["JavaScript", "TypeScript", "Python", "Java"],
+    "frameworks": ["React", "Next.js", "Node.js"],
+    "tools": ["Git", "Docker", "AWS"]
+  }
+}
