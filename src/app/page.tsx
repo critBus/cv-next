@@ -18,6 +18,9 @@ export default function Home() {
         {/* Header/Intro Section */}
         <HeaderIntroSection />
 
+        {/* Skills Section */}
+        <SkillsSection />
+
         {/* Experience Timeline */}
         <div className="mb-16 w-full max-w-4xl">
           <ExperienceSection experiences={cvData.experience} />
@@ -28,8 +31,7 @@ export default function Home() {
           <ProjectsSection projects={cvData.projects} />
         </div>
 
-        {/* Skills Section */}
-        <SkillsSection />
+
 
         {/* Contact Section */}
         <ContactSection />
