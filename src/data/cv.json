@@ -106,25 +106,49 @@
         ],
         "links": ["https://github.com/critBus/AdminFabricaRon"],
         "demo": ""
+      },
+      {
+        "id": 6,
+        "name": "Gestion De Nomina Salarial",
+        "description": [
+          "Sitio web para la gestión y calculo del salario de los trabajadores de una institución cubana teniendo en cuenta las múltiples reglas a seguir para este proceso que dificultan su implementación. El sitio web gestionaba los datos a los trabajadores tales como la asistencia, las licencias de maternidad, certificados médicos , utilidades anuales y mensuales y con toda esta información ofrecía reportes que eran enviados al personal interesado.",
+          "Para su implementación se utilizó Postgresql como base de datos, jazzmin como plantilla visual para mejorar la experiencia del usuario y reportbro para que los reportes tuvieran un formato en pdf personalizado según los requerimientos de la entidad"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": ["https://github.com/critBus/Nomina"],
+        "demo": ""
       }
     ],
     "Django Rest Framework": [
       {
         "id": 2,
-        "name": "IAEstadosDeMaduracion",
+        "name": "CVive",
         "description": [
-          "IAEstadosDeMaduracion es una plataforma web completa en Django, diseñada para proporcionar una plataforma de entrenamiento de sistemas de visión por computadoras basados en redes convolucionales. Esta herramienta permite a los usuarios almacenar y gestionar datasets de imágenes de frutos, que posteriormente pueden ser utilizados para el entrenamiento de una red neuronal convolucional."
+          "CVive es un proyecto que se dedica a centralizar la información sobre el parentesco de una persona, permitiendo búsquedas avanzadas y análisis de datos mediante IA sobre relaciones sanguíneas de forma similar a un árbol genealógico, pero implementado con una estructura de grafo en el ámbito de la programación.",
+          "Como desarrollador en este proyecto, me encargué del desarrollo del backend y del despliegue en un servidor Ubuntu de un servicio en línea que se presenta como una API REST. Utilicé el framework Django para implementar este servicio, con el objetivo de gestionar las relaciones familiares de los usuarios. Además puse en funcionamiento utilizando el framework TensorFlow el algoritmo de reconocimiento facial para la comparación de rostros entre los parientes del usuario.",
+          "Para llevar a cabo este objetivo, utilicé dos base de datos Neo4j, basada en grafos y escrita en Java, así como una base de datos PostgreSQL para gestionar las cuentas de los usuarios. Además, implementé la autenticación utilizando JSON Web Token.",
+          "Este servicio también incluye la administración de cuestionarios sobre el estado de salud, que permiten a los usuarios conocer su riesgo de padecer determinadas enfermedades. Los resultados se obtienen en función de las respuestas seleccionadas por el usuario y teniendo en cuenta la información del árbol genealógico almacenado en la base de datos.",
+          "Adicionalmente, la API ofrece la posibilidad de administrar preguntas y respuestas frecuentes, organizadas por categorías, para brindar soporte al frontend implementado, en este caso una aplicación móvil.",
+          "En la implementación de CVive utilicé las funcionalidades proporcionadas por Django para desarrollar una interfaz de administración visual destinada a los administradores del sistema. Esta interfaz permite gestionar la sección de cuestionarios de salud y preguntas y respuestas frecuentes para los usuarios finales.",
+          "Se documento el proyecto por medio de swagger y se garantizó su estabilidad con la utilización de pruebas unitarias"
         ],
         "technologies": [
           "Django",
           "PostgreSQL",
           "IA",
-          "Tensorflow",
-          "Keras",
+          "Deepface",
           "HTML",
           "CSS",
           "JavaScript",
-          "Bootstrap"
+          "Bootstrap",
+          "Neo4j"
         ],
         "links": [],
         "demo": ""
@@ -166,6 +190,11 @@
       "PostgreSQL",
       "SQLServer",
       "Neo4j"
+    ],
+    "IA":[
+      "Deepface",
+      "Tensorflow",
+      "Keras"
     ]
   }
 }
