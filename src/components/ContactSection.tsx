@@ -1,14 +1,14 @@
 import React from 'react';
 import cvData from '@/data/cv.json';
-import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { MdEmail, MdLocationOn } from 'react-icons/md';
+import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 const ContactSection = () => {
   const { contact } = cvData;
 
   const contactItems = [
     { icon: <MdEmail className="text-2xl" />, label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
-    { icon: <MdPhone className="text-2xl" />, label: 'Teléfono', value: contact.phone, href: `tel:${contact.phone}` },
+    { icon: <FaWhatsapp className="text-2xl" />, label: 'WhatsApp', value: contact.phone, href: `https://wa.me/${contact.phone.replace(/[^0-9]/g, '')}` },
     { icon: <FaLinkedin className="text-2xl" />, label: 'LinkedIn', value: '@rene-lazaro-collado-arteaga-447335245', href: contact.linkedin },
     { icon: <FaGithub className="text-2xl" />, label: 'GitHub', value: '@critBus', href: contact.github },
     { icon: <MdLocationOn className="text-2xl" />, label: 'Ubicación', value: contact.location },
