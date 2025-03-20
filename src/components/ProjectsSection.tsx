@@ -71,17 +71,17 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               <button
                 key={tech}
                 onClick={() => toggleTechnology(tech)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all transform hover:scale-105 ${
-                  selectedTechnologies.includes(tech)
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                }`}
+                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all transform hover:scale-105 ${selectedTechnologies.includes(tech)
+                  ? 'bg-blue-600 text-white shadow-md'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  }`}
+                style={{ cursor: 'pointer' }}
               >
                 {tech}
               </button>
             ))}
           </div>
-          
+
           <div className="flex items-center gap-4">
             {selectedTechnologies.length > 0 && (
               <>
