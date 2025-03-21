@@ -16,15 +16,104 @@
   "experience": [
     {
       "id": 1,
-      "company": "Company Name",
-      "position": "Position Title",
-      "startDate": "2023-01",
-      "endDate": "Present",
-      "description": "Description of your role and achievements",
+      "company": {
+          "type": "company",
+          "name": "WTS",
+          "logo": "logos/wts_logo.svg"
+        },
+      "position": "Backend",
+      "startDate": "2023-02",
+      "endDate": "2023-11",
+      "description": [
+        "Me encargue del desarrollo del backend de la aplicación Cvive, destinada a almacenar y gestionar arboles genealógicos",
+        "Desarrollé y desplegué una API RESTful robusta utilizando Django, facilitando la gestión de relaciones familiares complejas a través de una estructura de grafo.",
+        "Implementé un algoritmo de reconocimiento facial con TensorFlow, permitiendo la comparación de rostros entre familiares.",
+        "Diseñé e integré dos bases de datos: Neo4j (grafo) y PostgreSQL (usuarios), optimizando el almacenamiento y la recuperación de datos.",
+        "Implementé un sistema de autenticación seguro utilizando JSON Web Token.",
+        "Desarrollé la lógica para la administración de cuestionarios de salud, proporcionando análisis de riesgo personalizados basados en datos genealógicos.",
+        "Creé una interfaz de administración visual con Django para la gestión de cuestionarios de salud y preguntas frecuentes.",
+        "Documenté la API con Swagger y aseguré la estabilidad del código mediante pruebas unitarias.",
+        "Proporcioné soporte para la aplicación móvil frontend, gestionando preguntas y respuestas frecuentes organizadas por categorías."
+      ],
       "technologies": [
-        "Tech1",
-        "Tech2",
-        "Tech3"
+        "Django",
+          "Django Rest Framework",
+          "PostgreSQL",
+          "IA",
+          "Deepface",
+          "HTML",
+          "CSS",
+          "Neo4j"
+      ]
+    },
+    {
+      "id": 2,
+      "company": {
+          "type": "company",
+          "name": "GODJANGO",
+        },
+      "position": "Backend",
+      "startDate": "2023-12",
+      "endDate": "2024-02",
+      "description": [
+        "Participé en las etapas iniciales del desarrollo de Resolviste, una plataforma intermediaria de remesas, contribuyendo en la creación de una API RESTful robusta con Django Rest Framework.",
+        "Implementé la autenticación segura mediante JWT Authentication y planifiqué la integración de la plataforma de pago Stripe.",
+        "Diseñé y optimicé la base de datos PostgreSQL para un manejo eficiente de la información.",
+        "Documenté la API exhaustivamente utilizando Swagger, facilitando la integración y el mantenimiento.",
+        "Desarrollé pruebas unitarias para garantizar la estabilidad y fiabilidad del sistema.",
+        "Mejoré la interfaz de administración con la plantilla Jazzmin, optimizando la experiencia del usuario."
+        ],
+      "technologies": [
+        "Django",
+          "Django Rest Framework",
+          "PostgreSQL",
+      ]
+    },
+    {
+      "id": 3,
+      "company": {
+          "type": "company",
+          "name": "WTS",
+          "logo": "logos/wts_logo.svg"
+        },
+      "position": "Backend",
+      "startDate": "2024-02",
+      "endDate": "2024-08",
+      "description": [
+        "Desarrollé y desplegué el backend para 'LaLupa', una plataforma que conecta clientes con negocios locales a través de aplicaciones móviles. Implementé una API RESTful robusta utilizando Django Rest Framework, facilitando la gestión de usuarios y negocios. Diseñé e implementé un sistema de autenticación seguro mediante SMS y JWT Authentication, garantizando la seguridad y privacidad de los usuarios. Utilicé PostgreSQL como base de datos, optimizando el almacenamiento y la recuperación de datos. Documenté la API exhaustivamente con Swagger, facilitando la integración y el mantenimiento. Desarrollé pruebas unitarias para asegurar la estabilidad y fiabilidad del sistema. Mejoré la interfaz de administración con Jazzmin, optimizando la experiencia del usuario.",
+        "Desarrollé 'Backup Manager', un sistema para almacenar y gestionar copias de seguridad de bases de datos y datos multimedia, utilizando Django REST Framework. Implementé un sistema de almacenamiento seguro para garantizar la integridad y disponibilidad de los datos. Utilicé autenticación JWT basada en el algoritmo RSA para proporcionar un acceso seguro y controlado a los recursos del sistema. Este proyecto se enfocó en la sincronización del estado de los datos para facilitar la recuperación eficiente de aplicaciones en situaciones de emergencia."
+        ],
+      "technologies": [
+        "Django",
+        "Django Rest Framework",
+        "PostgreSQL",
+      ]
+    },
+    {
+      "id": 4,
+      "company": {
+          "type": "company",
+          "name": "Nitza",
+          "logo": "logos/nitza.svg"
+        },
+      "position": "Full Stack",
+      "startDate": "2024-09",
+      "endDate": "2025-02",
+      "description": [
+        "He participado activamente en el desarrollo y mantenimiento de diversos proyectos web, tanto en el backend como en el frontend, demostrando mi capacidad para trabajar en entornos complejos y multidisciplinarios. En el desarrollo de APIs, he implementado endpoints con sus respectivas vistas en Vue.js, asegurando una integración fluida entre el frontend y el backend. Además, he integrado sistemas de pago y suscripciones utilizando Stripe, garantizando transacciones seguras y eficientes. He mejorado la documentación de APIs existentes utilizando la librería 'drf spectacular' y he desarrollado pruebas unitarias para garantizar la estabilidad y robustez del código. La seguridad ha sido una prioridad, implementando control de acceso basado en roles (RBAC) con Middleware y desarrollando aplicaciones para la gestión de usuarios y roles. También he integrado Celery para tareas asíncronas y he trabajado en proyectos construidos con Flask, ampliando mi experiencia en diferentes frameworks.",
+        "En el proyecto PinkZebra, contribuí significativamente al mantenimiento y mejora del sitio web administrativo, una plataforma crucial para la gestión de datos y resultados de múltiples vendedores. Mi trabajo se centró en fortalecer la seguridad del sistema mediante la implementación de RBAC con Middleware, garantizando el acceso seguro a información sensible. Desarrollé la lógica para visualizar la jerarquía organizacional, permitiendo una comprensión clara de las relaciones entre los miembros de la empresa. Además, me encargué del mantenimiento y la optimización de diversas funcionalidades esenciales para el funcionamiento del sitio web. Documenté exhaustivamente cada paso del desarrollo utilizando Swagger, facilitando la colaboración y el mantenimiento a largo plazo. Implementé pruebas unitarias para asegurar la estabilidad y fiabilidad del código. Integré las vistas de cada funcionalidad con el frontend desarrollado en Vuetify, asegurando una experiencia de usuario coherente y fluida, y las conecté correctamente con el backend en Django Rest Framework. Destaco la implementación en Vue del árbol de jerarquía de la organización, que incluía paginación por niveles, optimización de llamadas al backend para minimizar la carga del árbol recursivo y la carga de nodos solo a petición del usuario. Este proyecto demostró mi capacidad para trabajar en un entorno complejo, abordando tanto el frontend como el backend, y aplicando mis habilidades en seguridad, optimización y documentación.",
+        ],
+      "technologies": [
+        "Django",
+          "Django Rest Framework",
+          "Flask",
+          "SQLServer",
+          "Vue",
+          "Vuetify",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Docker"
       ]
     }
   ],
@@ -181,8 +270,6 @@
           "PostgreSQL",
           "IA",
           "Deepface",
-          "HTML",
-          "CSS",
           "Neo4j"
         ],
         "links": [],
@@ -375,11 +462,11 @@
   "education": [
     {
       "id": 1,
-      "institution": "Universidad de La Habana",
-      "degree": "Licenciado en Ciencias de la Computación",
+      "institution": "Universidad Agraria de La Habana 'Fructuoso Rodríguez Pérez'",
+      "degree": "Ingenieria en Ciencias de la Computación",
       "field": "Informática y Ciencias de la Computación",
       "startDate": "2016",
-      "endDate": "2021"
+      "endDate": "2022"
     }
   ],
   "skills": {
