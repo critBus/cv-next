@@ -43,7 +43,9 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
         positionSet.add(project.position_occupied);
       });
     });
-    return Array.from(positionSet).sort();
+    const all_positions = Array.from(positionSet).sort()
+    // console.log(all_positions)
+    return all_positions;
   }, [projects]);
 
   // Filter projects based on selected technologies and positions
@@ -53,9 +55,9 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     const filtered: Record<string, Project[]> = {};
     Object.entries(projects).forEach(([category, projectList]) => {
       filtered[category] = projectList.filter(project => {
-        const matchesTech = selectedTechnologies.length === 0 || 
+        const matchesTech = selectedTechnologies.length === 0 ||
           selectedTechnologies.every(tech => project.technologies.includes(tech));
-        const matchesPosition = selectedPositions.length === 0 || 
+        const matchesPosition = selectedPositions.length === 0 ||
           selectedPositions.includes(project.position_occupied);
         return matchesTech && matchesPosition;
       });
@@ -169,8 +171,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
 
       {/* Projects list */}
       <div className="space-y-16">
-        {Object.entries(filteredProjects).map(([language, projectList]) => 
-          projectList.length > 0 && 
+        {Object.entries(filteredProjects).map(([language, projectList]) =>
+          projectList.length > 0 &&
           <div key={language}>
             <h3 className="text-2xl font-semibold mb-8 text-center">{language}</h3>
             <div className="flex flex-col gap-8">
@@ -194,9 +196,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
       {/* Floating scroll to top button */}
       <button
         onClick={scrollToFilters}
-        className={`fixed bottom-8 right-8 p-4 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-110 ${
-          showScrollButton ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
-        }`}
+        className={`fixed bottom-8 right-8 p-4 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-110 ${showScrollButton ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
+          }`}
         aria-label="Scroll to filters"
       >
         <FaArrowUp className="text-xl" />

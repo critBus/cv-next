@@ -224,6 +224,7 @@
       {
         "id": 9,
         "name": "CRIMAT",
+        "position_occupied": "Full Stack",
         "client": {
           "type": "company",
           "name": "WTS",
