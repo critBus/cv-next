@@ -2,6 +2,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import ProjectCard from './ProjectCard';
 import { FaArrowUp } from 'react-icons/fa';
+import TechBadge from './TechBadge';
 
 interface Project {
   id: number;
@@ -86,17 +87,13 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
         <div className="flex flex-col items-center gap-4">
           <div className="flex flex-wrap gap-2 justify-center">
             {allTechnologies.map(tech => (
-              <button
+              <TechBadge
                 key={tech}
+                tech={tech}
                 onClick={() => toggleTechnology(tech)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all transform hover:scale-105 ${selectedTechnologies.includes(tech)
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                style={{ cursor: 'pointer' }}
-              >
-                {tech}
-              </button>
+                selected={selectedTechnologies.includes(tech)}
+                variant="filter"
+              />
             ))}
           </div>
 

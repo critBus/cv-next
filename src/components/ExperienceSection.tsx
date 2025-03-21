@@ -1,5 +1,6 @@
 import React from 'react';
 import Timeline from './Timeline';
+import TechBadge from './TechBadge';
 
 interface Experience {
   id: number;
@@ -25,12 +26,11 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
         <p className="mb-2 text-center">{exp.description}</p>
         <div className="flex flex-wrap gap-2 justify-center">
           {exp.technologies.map((tech, index) => (
-            <span
+            <TechBadge
               key={index}
-              className="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-sm"
-            >
-              {tech}
-            </span>
+              tech={tech}
+              variant="compact"
+            />
           ))}
         </div>
       </>
@@ -38,10 +38,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
   }));
 
   return (
-    <section className="w-full">
+    <>
       <h2 className="text-3xl font-bold mb-8 text-center">Experiencia Laboral</h2>
       <Timeline items={timelineItems} />
-    </section>
+    </>
   );
 };
 
