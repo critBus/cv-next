@@ -11,6 +11,7 @@ interface Project {
   technologies: string[];
   links?: string[];
   demo?: string;
+  position_occupied: string;
 }
 
 interface ProjectsSectionProps {
@@ -19,6 +20,7 @@ interface ProjectsSectionProps {
 
 const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   const [selectedTechnologies, setSelectedTechnologies] = useState<string[]>([]);
+  const [selectedPositions, setSelectedPositions] = useState<string[]>([]);
   const [showScrollButton, setShowScrollButton] = useState(false);
   const filtersRef = useRef<HTMLDivElement>(null);
 
@@ -33,18 +35,33 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     return Array.from(techSet).sort();
   }, [projects]);
 
-  // Filter projects based on selected technologies
+  // Extract all unique positions from all projects
+  const allPositions = useMemo(() => {
+    const positionSet = new Set<string>();
+    Object.values(projects).forEach(projectList => {
+      projectList.forEach(project => {
+        positionSet.add(project.position_occupied);
+      });
+    });
+    return Array.from(positionSet).sort();
+  }, [projects]);
+
+  // Filter projects based on selected technologies and positions
   const filteredProjects = useMemo(() => {
-    if (selectedTechnologies.length === 0) return projects;
+    if (selectedTechnologies.length === 0 && selectedPositions.length === 0) return projects;
 
     const filtered: Record<string, Project[]> = {};
     Object.entries(projects).forEach(([category, projectList]) => {
-      filtered[category] = projectList.filter(project =>
-        selectedTechnologies.every(tech => project.technologies.includes(tech))
-      );
+      filtered[category] = projectList.filter(project => {
+        const matchesTech = selectedTechnologies.length === 0 || 
+          selectedTechnologies.every(tech => project.technologies.includes(tech));
+        const matchesPosition = selectedPositions.length === 0 || 
+          selectedPositions.includes(project.position_occupied);
+        return matchesTech && matchesPosition;
+      });
     });
     return filtered;
-  }, [projects, selectedTechnologies]);
+  }, [projects, selectedTechnologies, selectedPositions]);
 
   // Count total filtered projects
   const totalFilteredProjects = useMemo(() => {
@@ -59,8 +76,17 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     );
   };
 
+  const togglePosition = (position: string) => {
+    setSelectedPositions(prev =>
+      prev.includes(position)
+        ? prev.filter(p => p !== position)
+        : [...prev, position]
+    );
+  };
+
   const clearFilters = () => {
     setSelectedTechnologies([]);
+    setSelectedPositions([]);
   };
 
   const scrollToFilters = () => {
@@ -70,7 +96,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const threshold = 500; // Show button after scrolling 500px
+      const threshold = 500;
       setShowScrollButton(scrollY > threshold);
     };
 
@@ -82,23 +108,48 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     <section className="w-full">
       <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
 
-      {/* Technology filters */}
+      {/* Filters */}
       <div ref={filtersRef} className="mb-12 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md">
-        <div className="flex flex-col items-center gap-4">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {allTechnologies.map(tech => (
-              <TechBadge
-                key={tech}
-                tech={tech}
-                onClick={() => toggleTechnology(tech)}
-                selected={selectedTechnologies.includes(tech)}
-                variant="filter"
-              />
-            ))}
+        <div className="flex flex-col items-center gap-6">
+          {/* Technology filters */}
+          <div className="w-full">
+            <h3 className="text-lg font-semibold mb-3 text-center">Tecnologías</h3>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {allTechnologies.map(tech => (
+                <TechBadge
+                  key={tech}
+                  tech={tech}
+                  onClick={() => toggleTechnology(tech)}
+                  selected={selectedTechnologies.includes(tech)}
+                  variant="filter"
+                />
+              ))}
+            </div>
           </div>
 
+          {/* Position filters */}
+          <div className="w-full">
+            <h3 className="text-lg font-semibold mb-3 text-center">Posiciones</h3>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {allPositions.map(position => (
+                <button
+                  key={position}
+                  onClick={() => togglePosition(position)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors
+                    ${selectedPositions.includes(position)
+                      ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
+                      : 'bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'
+                    }`}
+                >
+                  {position}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Filter status and clear button */}
           <div className="flex items-center gap-4">
-            {selectedTechnologies.length > 0 && (
+            {(selectedTechnologies.length > 0 || selectedPositions.length > 0) && (
               <>
                 <button
                   onClick={clearFilters}
@@ -118,26 +169,26 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
 
       {/* Projects list */}
       <div className="space-y-16">
-        {Object.entries(filteredProjects).map(([language, projectList]) => (
-          projectList.length > 0 && (
-            <div key={language}>
-              <h3 className="text-2xl font-semibold mb-8 text-center">{language}</h3>
-              <div className="flex flex-col gap-8">
-                {projectList.map((project) => (
-                  <div key={project.id}>
-                    <ProjectCard
-                      name={project.name}
-                      description={project.description}
-                      technologies={project.technologies}
-                      links={project.links}
-                      demo={project.demo}
-                    />
-                  </div>
-                ))}
-              </div>
+        {Object.entries(filteredProjects).map(([language, projectList]) => 
+          projectList.length > 0 && 
+          <div key={language}>
+            <h3 className="text-2xl font-semibold mb-8 text-center">{language}</h3>
+            <div className="flex flex-col gap-8">
+              {projectList.map((project) => (
+                <div key={project.id}>
+                  <ProjectCard
+                    name={project.name}
+                    description={project.description}
+                    technologies={project.technologies}
+                    links={project.links}
+                    demo={project.demo}
+                    position_occupied={project.position_occupied}
+                  />
+                </div>
+              ))}
             </div>
-          )
-        ))}
+          </div>
+        )}
       </div>
 
       {/* Floating scroll to top button */}
