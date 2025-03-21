@@ -3,8 +3,11 @@ import {
   SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
   SiNodedotjs, SiExpress, SiPython, SiDjango,
   SiMongodb, SiPostgresql, SiMysql, SiNeo4J,
-  SiTailwindcss, SiBootstrap, SiGit, SiDocker
+  SiTailwindcss, SiBootstrap, SiGit, SiDocker,
+  SiCss3, SiHtml5, SiTensorflow, SiKeras,
+  SiVuedotjs, SiVuetify
 } from 'react-icons/si';
+import { BiBrain } from 'react-icons/bi';
 
 type IconMapType = {
   [key: string]: React.ReactNode;
@@ -26,7 +29,15 @@ const iconMap: IconMapType = {
   'Tailwind CSS': <SiTailwindcss className="text-[#06B6D4]" />,
   'Bootstrap': <SiBootstrap className="text-[#7952B3]" />,
   'Git': <SiGit className="text-[#F05032]" />,
-  'Docker': <SiDocker className="text-[#2496ED]" />
+  'Docker': <SiDocker className="text-[#2496ED]" />,
+  'CSS': <SiCss3 className="text-[#1572B6]" />,
+  'HTML': <SiHtml5 className="text-[#E34F26]" />,
+  'IA': <BiBrain className="text-[#00A67D]" />,
+  'Keras': <SiKeras className="text-[#D00000]" />,
+  'TensorFlow': <SiTensorflow className="text-[#FF6F00]" />,
+  'Vue': <SiVuedotjs className="text-[#4FC08D]" />,
+  'Vuetify': <SiVuetify className="text-[#1867C0]" />,
+  'Deepface': <BiBrain className="text-[#3776AB]" /> // Usando el icono de cerebro en color Python
 };
 
 interface TechBadgeProps {

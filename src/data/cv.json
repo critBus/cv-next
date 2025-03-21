@@ -42,7 +42,7 @@
           "Django",
           "PostgreSQL",
           "IA",
-          "Tensorflow",
+          "TensorFlow",
           "Keras",
           "HTML",
           "CSS",
@@ -203,7 +203,7 @@
     ],
     "IA": [
       "Deepface",
-      "Tensorflow",
+      "TensorFlow",
       "Keras"
     ]
   }
