@@ -33,6 +33,7 @@
       {
         "id": 1,
         "name": "IAEstadosDeMaduracion",
+        "position_occupied": "Full Stack",
         "description": [
           "IAEstadosDeMaduracion es una plataforma web completa en Django, diseñada para proporcionar una plataforma de entrenamiento de sistemas de visión por computadoras basados en redes convolucionales. Esta herramienta permite a los usuarios almacenar y gestionar datasets de imágenes de frutos, que posteriormente pueden ser utilizados para el entrenamiento de una red neuronal convolucional.",
           "La interfaz de esta plataforma web es muy cómoda y ofrece múltiples opciones de configuración para el entrenamiento de la red neuronal. Estas opciones permiten limitar el número máximo de épocas para el entrenamiento, almacenar solo el mejor modelo obtenido y detener el entrenamiento al alcanzar cierto límite de precisión. Durante el proceso de entrenamiento, IA Estados de Maduración proporciona gráficos que muestran la estadística del progreso, como la precisión y la pérdida.",
@@ -52,11 +53,12 @@
         "links": [
           "https://github.com/critBus/IAEstadosDeMaduracion"
         ],
-        "demo": ""
+        "demo": []
       },
       {
         "id": 3,
         "name": "CinemaManagement",
+        "position_occupied": "Full Stack",
         "description": [
           "CinemaManagement es un sitio web creado para la gestión de un negocio de contenido multimedia y la presentación de un catálogo web para publicitar dicho contenido. Esta herramienta proporciona al administrador la posibilidad de integrar los datos de las películas, series, animes, música y juegos que se tengan en el negocio.",
           "El sitio web cuenta con potentes buscadores que permiten encontrar fácilmente el contenido multimedia deseado, por ejemplo, mediante la búsqueda de películas por actores o viceversa. Además, el uso de Django como plataforma de desarrollo y Postgres como base de datos, proporciona un manejo de la información mucho más organizado y seguro.",
@@ -73,11 +75,15 @@
         "links": [
           "https://github.com/BigCatalyst/CinemaManagement"
         ],
-        "demo": ""
+        "demo": []
       },
       {
         "id": 4,
         "name": "MuseoJaruqueño",
+        "position_occupied": "Full Stack",
+        "client": {
+          "type": "student"
+        },
         "description": [
           "Se trata de un sitio web en el que colaboré en su creación, usando la tecnología Django. Este sitio está diseñado para administrar de manera efectiva la información del museo local y permitir que los trabajadores del centro actualicen y manejen información relevante sobre los diferentes artículos que se exhiben en la institución, incluyendo su descripción histórica, origen y ubicación.",
           "Los visitantes tienen acceso a una descripción detallada del museo y su historia, y pueden obtener información actualizada sobre las exposiciones y actividades que involucran a la institución. Mi contribución en la creación de este sitio web fue en el diseño y desarrollo del sistema, incluyendo la implementación de lógicas de negocios personalizadas y la creación de funciones para facilitar la administración de la información."
@@ -93,11 +99,15 @@
         "links": [
           "https://github.com/critBus/SitioMuseo"
         ],
-        "demo": ""
+        "demo": []
       },
       {
         "id": 5,
         "name": "Gestión Instituciones",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
         "description": [
           "Sitio web para la gestión de la información sobre las instituciones productivas y tecnologías existentes en el país. En el se permite a sus clientes la visualización de la ubicación geográfica de las instituciones, así como la obtención de los datos filtrados y organizados en formatos como PDF o EXEL.",
           "Para el desarrollo de este proyecto se utilizó Django. Para el frontend del cliente se utilizó bootstrap 5, con Leaflet y amCharts para mostrar la ubicación geográfica de las instituciones. Para el frontend de la administración se utilizó las herramientas que provee django. Para almacenar los datos se utilizó PostgreSQL."
@@ -113,11 +123,15 @@
         "links": [
           "https://github.com/critBus/AdminFabricaRon"
         ],
-        "demo": ""
+        "demo": []
       },
       {
         "id": 6,
         "name": "Gestion De Nomina Salarial",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
         "description": [
           "Sitio web para la gestión y calculo del salario de los trabajadores de una institución cubana teniendo en cuenta las múltiples reglas a seguir para este proceso que dificultan su implementación. El sitio web gestionaba los datos a los trabajadores tales como la asistencia, las licencias de maternidad, certificados médicos , utilidades anuales y mensuales y con toda esta información ofrecía reportes que eran enviados al personal interesado.",
           "Para su implementación se utilizó Postgresql como base de datos, jazzmin como plantilla visual para mejorar la experiencia del usuario y reportbro para que los reportes tuvieran un formato en pdf personalizado según los requerimientos de la entidad"
@@ -133,13 +147,19 @@
         "links": [
           "https://github.com/critBus/Nomina"
         ],
-        "demo": ""
+        "demo": []
       }
     ],
     "Django Rest Framework": [
       {
-        "id": 2,
+        "id": 7,
         "name": "CVive",
+        "position_occupied": "Backend",
+        "client": {
+          "type": "company",
+          "name": "WTS",
+          "logo": "logos/wts_logo.svg"
+        },
         "description": [
           "CVive es un proyecto que se dedica a centralizar la información sobre el parentesco de una persona, permitiendo búsquedas avanzadas y análisis de datos mediante IA sobre relaciones sanguíneas de forma similar a un árbol genealógico, pero implementado con una estructura de grafo en el ámbito de la programación.",
           "Como desarrollador en este proyecto, me encargué del desarrollo del backend y del despliegue en un servidor Ubuntu de un servicio en línea que se presenta como una API REST. Utilicé el framework Django para implementar este servicio, con el objetivo de gestionar las relaciones familiares de los usuarios. Además puse en funcionamiento utilizando el framework TensorFlow el algoritmo de reconocimiento facial para la comparación de rostros entre los parientes del usuario.",
@@ -151,20 +171,124 @@
         ],
         "technologies": [
           "Django",
+          "Django Rest Framework",
           "PostgreSQL",
           "IA",
           "Deepface",
           "HTML",
           "CSS",
-          "JavaScript",
-          "Bootstrap",
           "Neo4j"
         ],
         "links": [],
-        "demo": ""
+        "demo": []
+      },
+      {
+        "id": 8,
+        "name": "LaLupa",
+        "position_occupied": "Backend",
+        "client": {
+          "type": "company",
+          "name": "WTS",
+          "logo": "logos/wts_logo.svg"
+        },
+        "description": [
+          "Me encargue del desarrollo y despliegue del backend del proyecto Lupa, el cual consta de dos aplicaciones móviles que ofrecen a los clientes un lugar donde encontrar negocios relacionados con sus intereses, y a los emprendedores una plataforma para gestionar y publicar sus negocios.",
+          "Implemente un sistema de autenticación por sms para inscribir un usuario nuevo y para solicitar la recuperación de la contraseña.",
+          "Para llevar a cabo esta tarea, he utilizado Django Rest Framework para implementar la API, PostgreSQL y JWT Authentication.",
+          "Se documentó el proyecto por medio de swagger, se garantizó su estabilidad con la utilización de pruebas unitarias, para la administración se utilizó jazzmin."
+        ],
+        "technologies": [
+          "Django",
+          "Django Rest Framework",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "links": [],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://lalupapp.com/"
+          },
+          {
+            "type": "Google Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.wts.lalupa.admin&hl=es"
+          },
+          {
+            "type": "Google Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.wts.lalupa.client.v3&hl=es"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "CRIMAT",
+        "client": {
+          "type": "company",
+          "name": "WTS",
+          "logo": "logos/wts_logo.svg"
+        },
+        "description": [
+          "Participe en el mantenimiento y reparación del sitio web CRIMAT que ofrecía un sistema para la gestión de un proveedor de productos de belleza, orientada a la venta de productos exclusivos a pequeños negocios independientes. Este sitio enviaba de forma automática avisos a sus clientes por medio de correos de las nuevas ofertas. Además servía de API para una aplicación de celular que también ofrecía estos servicios.",
+          "Para su implementación se utilizó Postgresql como base de datos, se adaptó una plantilla basada en bootstrap para el visual del cliente y jazzmin para la administración de los desarrolladores, se utilizó Stripe como pasarela de pago, la api se creó mediante django rest framework y se documentó por medio de swagger. Para mantener la estabilidad fueron aplicadas múltiples pruebas unitarias. Se utilizó JWT Authentication para la seguridad de la api."
+        ],
+        "technologies": [
+          "Django",
+          "Django Rest Framework",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [],
+        "demo": []
+      },
+      {
+        "id": 10,
+        "name": "Backup Manager",
+        "position_occupied": "Backend",
+        "client": {
+          "type": "company",
+          "name": "WTS",
+          "logo": "logos/wts_logo.svg"
+        },
+        "description": [
+          "Desarrollé el proyecto Backup Manager utilizando Django REST Framework, diseñado para almacenar y gestionar datos de copias de seguridad de bases de datos y conjuntos de datos multimedia. Este sistema sincroniza el estado de los datos para garantizar la recuperación eficiente de aplicaciones suscritas en situaciones de emergencia.",
+          "Almacenamiento Seguro: Implementé un sistema robusto para el almacenamiento y gestión de copias de seguridad, asegurando la integridad y disponibilidad de los datos.",
+          "Autenticación Segura: Utilicé autenticación JWT basada en el algoritmo RSA, proporcionando un acceso seguro y controlado a los recursos del sistema."
+        ],
+        "technologies": [
+          "Django",
+          "Django Rest Framework",
+          "PostgreSQL"
+        ],
+        "links": [],
+        "demo": []
+      },
+      {
+        "id": 11,
+        "name": "Resolviste",
+        "position_occupied": "Backend",
+        "description": [
+          "Participe en las etapas iniciales del sitio web llamado Resolviste que tenía como intención final proveer de una plataforma intermediaria de remesas entre revendedores y clientes finales, ofreciéndole las herramientas necesarias a ambos actores del negocio.",
+          "La api se desarrolló mediante django rest framework, documentada por medio de swagger, con una base de datos en Postgresql, para la seguridad se escogió a JWT Authentication, como plataforma de pago se planeaba usar a Stripe, para la administración se utilizó a jazzmin. La estabilidad de la api se garantizaba por medio de pruebas unitarias.",
+          "Documentación: Documenté la API utilizando Swagger, facilitando la comprensión y uso por parte de otros desarrolladores.",
+          "Pruebas Unitarias: Realicé pruebas unitarias exhaustivas para validar el correcto funcionamiento del sistema, garantizando su fiabilidad y rendimiento.",
+          "Base de Datos: Utilicé PostgreSQL como base de datos principal, asegurando un manejo eficiente y seguro de los datos.",
+          "Interfaz Mejorada: Implementé la plantilla Jazzmin para mejorar la apariencia y usabilidad del panel de administración, optimizando la experiencia del usuario."
+        ],
+        "technologies": [
+          "Django",
+          "Django Rest Framework",
+          "PostgreSQL"
+        ],
+        "links": [],
+        "demo": []
       }
     ],
-    "Java": []
+    "Next": []
   },
   "education": [
     {
