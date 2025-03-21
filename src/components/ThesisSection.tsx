@@ -30,11 +30,14 @@ const ThesisSection: React.FC = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
               <div className="flex-1">
                 <div className="flex items-start gap-3">
-                  <FaGraduationCap className="text-2xl text-blue-600 dark:text-blue-400 mt-1 group-hover:scale-110 transition-transform" />
+
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                      {thesis.title}
-                    </h3>
+                    <div className="flex items-center gap-3">
+                      <FaUniversity className="text-2xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform flex-shrink-0" />
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                        {thesis.title}
+                      </h3>
+                    </div>
                     <div className="mt-4 space-y-3">
                       {thesis.description.map((desc, idx) => (
                         <p key={idx} className="text-gray-600 dark:text-gray-300">
