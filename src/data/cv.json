@@ -34,6 +34,9 @@
         "id": 1,
         "name": "IAEstadosDeMaduracion",
         "position_occupied": "Full Stack",
+        "client": {
+          "type": "personal"
+        },
         "description": [
           "IAEstadosDeMaduracion es una plataforma web completa en Django, diseñada para proporcionar una plataforma de entrenamiento de sistemas de visión por computadoras basados en redes convolucionales. Esta herramienta permite a los usuarios almacenar y gestionar datasets de imágenes de frutos, que posteriormente pueden ser utilizados para el entrenamiento de una red neuronal convolucional.",
           "La interfaz de esta plataforma web es muy cómoda y ofrece múltiples opciones de configuración para el entrenamiento de la red neuronal. Estas opciones permiten limitar el número máximo de épocas para el entrenamiento, almacenar solo el mejor modelo obtenido y detener el entrenamiento al alcanzar cierto límite de precisión. Durante el proceso de entrenamiento, IA Estados de Maduración proporciona gráficos que muestran la estadística del progreso, como la precisión y la pérdida.",
@@ -59,6 +62,9 @@
         "id": 3,
         "name": "CinemaManagement",
         "position_occupied": "Full Stack",
+        "client": {
+          "type": "personal"
+        },
         "description": [
           "CinemaManagement es un sitio web creado para la gestión de un negocio de contenido multimedia y la presentación de un catálogo web para publicitar dicho contenido. Esta herramienta proporciona al administrador la posibilidad de integrar los datos de las películas, series, animes, música y juegos que se tengan en el negocio.",
           "El sitio web cuenta con potentes buscadores que permiten encontrar fácilmente el contenido multimedia deseado, por ejemplo, mediante la búsqueda de películas por actores o viceversa. Además, el uso de Django como plataforma de desarrollo y Postgres como base de datos, proporciona un manejo de la información mucho más organizado y seguro.",

@@ -10,8 +10,16 @@ interface Project {
   description: string[];
   technologies: string[];
   links?: string[];
-  demo?: string;
+  demo?: {
+    type: string;
+    url: string;
+  }[];
   position_occupied: string;
+  client?: {
+    type: 'personal' | 'student' | 'company';
+    name?: string;
+    logo?: string;
+  };
 }
 
 interface ProjectsSectionProps {
@@ -185,6 +193,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                     links={project.links}
                     demo={project.demo}
                     position_occupied={project.position_occupied}
+                    client={project.client}
                   />
                 </div>
               ))}
