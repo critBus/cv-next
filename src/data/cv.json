@@ -351,14 +351,6 @@
     }
   ],
   "skills": {
-    "Programación": [
-      "JavaScript",
-      "TypeScript",
-      "Python",
-      "Java",
-      "C#",
-      "Node.js"
-    ],
     "Frontend": [
       "React",
       "Next.js",
@@ -386,6 +378,14 @@
       "PostgreSQL",
       "SQLServer",
       "Neo4j"
+    ],
+    "Programación": [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java",
+      "C#",
+      "Node.js"
     ],
     "IA": [
       "Deepface",

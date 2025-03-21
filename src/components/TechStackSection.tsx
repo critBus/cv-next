@@ -14,7 +14,7 @@ const TechStackSection: React.FC = () => {
             key={idx}
             className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
           >
-            <h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">
+            <h3 className="text-xl text-center font-semibold mb-4 text-blue-600 dark:text-blue-400">
               {category}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
