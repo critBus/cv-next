@@ -362,6 +362,8 @@
     "Frontend": [
       "React",
       "Next.js",
+      "Vue",
+      "Vuetify",
       "JavaScript",
       "TypeScript",
       "CSS",

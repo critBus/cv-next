@@ -37,7 +37,16 @@ const iconMap: IconMapType = {
       />
     </div>
   ),
-  'Flask': () => <Image src="/flask.svg" alt="Flask" width={20} height={20} className="dark:invert" />,
+  'Flask': () => (
+    <div className="w-5 h-5 relative flex-shrink-0">
+      <Image 
+        src="/flask.svg" 
+        alt="Flask" 
+        fill
+        className="object-contain dark:invert"
+      />
+    </div>
+  ),
   'MongoDB': () => <SiMongodb className="text-[#47A248]" />,
   'PostgreSQL': () => <SiPostgresql className="text-[#4169E1]" />,
   'SQLServer': () => <DiMsqlServer className="text-[#CC2927]" />,
@@ -56,7 +65,7 @@ const iconMap: IconMapType = {
   'TensorFlow': () => <SiTensorflow className="text-[#FF6F00]" />,
   'Vue': () => <SiVuedotjs className="text-[#4FC08D]" />,
   'Vuetify': () => <SiVuetify className="text-[#1867C0]" />,
-  'Deepface': () => <BiBrain className="text-[#3776AB]" /> // Usando el icono de cerebro en color Python
+  'Deepface': () => <BiBrain className="text-[#3776AB]" /> // Using brain icon in Python color
 };
 
 interface TechBadgeProps {
@@ -81,7 +90,7 @@ const TechBadge: React.FC<TechBadgeProps> = ({
       ? 'bg-blue-600 text-white shadow-md'
       : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
     }`,
-    compact: "px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-600"
+    compact: "flex flex-col items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
   };
 
   return (
@@ -90,8 +99,14 @@ const TechBadge: React.FC<TechBadgeProps> = ({
       className={`${baseStyles} ${variants[variant]}`}
       style={{ cursor: onClick ? 'pointer' : 'default' }}
     >
-      {getIcon && <span className="text-lg flex items-center justify-center">{getIcon(variant === 'filter' && selected)}</span>}
-      <span>{tech}</span>
+      {getIcon && (
+        <span className={`text-lg flex items-center justify-center ${variant === 'compact' ? 'mb-2' : ''}`}>
+          {getIcon(variant === 'filter' && selected)}
+        </span>
+      )}
+      <span className={variant === 'compact' ? 'text-sm text-gray-700 dark:text-gray-300' : ''}>
+        {tech}
+      </span>
     </button>
   );
 };
