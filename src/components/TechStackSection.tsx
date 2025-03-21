@@ -19,12 +19,8 @@ const TechStackSection: React.FC = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {categorySkills.map((skill: string, skillIdx: number) => (
-                <div
-                  key={skillIdx}
-                  className="flex flex-col items-center gap-2 p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
-                >
-                  <TechBadge tech={skill} variant="compact" />
-                </div>
+                <TechBadge key={skillIdx} tech={skill} variant="compact" />
+
               ))}
             </div>
           </div>
