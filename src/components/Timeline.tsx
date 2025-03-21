@@ -3,7 +3,7 @@ import React from 'react';
 interface TimelineItem {
   date: string;
   title: string;
-  subtitle?: string;
+  subtitle?: string | React.ReactNode;
   description?: string | React.ReactNode;
 }
 

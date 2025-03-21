@@ -1,14 +1,21 @@
 import React from 'react';
 import Timeline from './Timeline';
 import TechBadge from './TechBadge';
+import Image from 'next/image';
+
+interface Company {
+  type: 'company' | 'personal' | 'student';
+  name: string;
+  logo?: string;
+}
 
 interface Experience {
   id: number;
-  company: string;
+  company: Company;
   position: string;
   startDate: string;
   endDate: string;
-  description: string;
+  description: string[];
   technologies: string[];
 }
 
@@ -20,10 +27,27 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
   const timelineItems = experiences.map(exp => ({
     date: `${exp.startDate} - ${exp.endDate}`,
     title: exp.position,
-    subtitle: exp.company,
+    subtitle: (
+      <div className="flex items-center justify-center gap-2">
+        {exp.company.logo && (
+          <Image
+            src={`/${exp.company.logo}`}
+            alt={`${exp.company.name} logo`}
+            width={24}
+            height={24}
+            className="object-contain"
+          />
+        )}
+        <span>{exp.company.name}</span>
+      </div>
+    ),
     description: (
       <>
-        <p className="mb-2 text-center">{exp.description}</p>
+        <div className="mb-4 space-y-2">
+          {exp.description.map((desc, idx) => (
+            <p key={idx} className="text-center">{desc}</p>
+          ))}
+        </div>
         <div className="flex flex-wrap gap-2 justify-center">
           {exp.technologies.map((tech, index) => (
             <TechBadge
