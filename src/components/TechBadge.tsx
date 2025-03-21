@@ -8,6 +8,7 @@ import {
   SiVuedotjs, SiVuetify
 } from 'react-icons/si';
 import { BiBrain } from 'react-icons/bi';
+import { TbApi } from 'react-icons/tb';
 
 type IconMapType = {
   [key: string]: React.ReactNode;
@@ -22,6 +23,7 @@ const iconMap: IconMapType = {
   'Express': <SiExpress className="text-gray-900 dark:text-white" />,
   'Python': <SiPython className="text-[#3776AB]" />,
   'Django': <SiDjango className="text-[#092E20]" />,
+  'Django Rest Framework': <TbApi className="text-[#A30000]" />,
   'MongoDB': <SiMongodb className="text-[#47A248]" />,
   'PostgreSQL': <SiPostgresql className="text-[#4169E1]" />,
   'MySQL': <SiMysql className="text-[#4479A1]" />,

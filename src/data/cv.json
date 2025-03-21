@@ -299,7 +299,46 @@
         "demo": []
       }
     ],
-    "Next": []
+    "Next": [
+      {
+        "id": 12,
+        "name": "Horizonte Académico",
+        "position_occupied": "Full Stack",
+        "client": {
+          "type": "student"
+        },
+        "description": [
+          "Desarrollé 'Horizonte Académico', una plataforma web completa diseñada para facilitar la gestión académica de estudiantes y su admisión a carreras para la continuidad de su estudio. Este proyecto requirió de una capacidad para crear soluciones web complejas y robustas, abarcando tanto el backend como el frontend.",
+          "Implementé una API RESTful potente utilizando Django Rest Framework, conectada a una base de datos PostgreSQL, garantizando una comunicación eficiente y escalable.La documentación exhaustiva de la API con Swagger facilita la integración y el mantenimiento. Además, mejoré la interfaz de administración de Django con Django Jazzmin, proporcionando una experiencia de usuario intuitiva y atractiva.",
+          "Para el frontend, desarrollé una interfaz de usuario moderna e intuitiva con Next.js y Tailwind CSS, asegurando una experiencia de usuario excepcional en cualquier dispositivo. Implementé un sistema de roles y permisos granular, controlando el acceso y las funcionalidades para estudiantes, profesores y secretarias.",
+          "Las funcionalidades clave incluyen un aula virtual interactiva para la creación y gestión de cursos en línea, carga de recursos, asignación y evaluación de tareas, y comunicación entre profesores y estudiantes. También desarrollé un sistema de gestión de admisiones eficiente y transparente, procesando solicitudes basadas en calificaciones de secundaria, calculando escalafones y asignando carreras universitarias.",
+          "Este proyecto demuestra mi capacidad para trabajar con tecnologías de vanguardia y crear aplicaciones web completas que optimizan los procesos académicos y administrativos."
+        ],
+        "technologies": [
+          "Django",
+          "Django Rest Framework",
+          "PostgreSQL",
+          "Node.js",
+          "React",
+          "Next.js",
+          "Tailwind CSS"
+        ],
+        "links": [
+          "https://github.com/critBus/notas_estudiantes_back_drf",
+          "https://github.com/BigCatalyst/notas_estudiantes_front_next"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://notas-estudiantes-back-drf.onrender.com"
+          },
+          {
+            "type": "Web",
+            "url": "https://notas-estudiantes-front-next-5ntw.onrender.com"
+          }
+        ]
+      }
+    ]
   },
   "education": [
     {
