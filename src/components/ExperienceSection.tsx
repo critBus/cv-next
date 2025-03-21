@@ -28,7 +28,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
     date: `${exp.startDate} - ${exp.endDate}`,
     title: exp.position,
     subtitle: (
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center gap-2">
         {exp.company.logo && (
           <Image
             src={`/${exp.company.logo}`}
@@ -45,10 +45,10 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experiences }) =>
       <>
         <div className="mb-4 space-y-2">
           {exp.description.map((desc, idx) => (
-            <p key={idx} className="text-center">{desc}</p>
+            <p key={idx} >{desc}</p>
           ))}
         </div>
-        <div className="flex flex-wrap gap-2 justify-center">
+        <div className="flex flex-wrap gap-2">
           {exp.technologies.map((tech, index) => (
             <TechBadge
               key={index}
