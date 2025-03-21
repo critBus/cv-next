@@ -338,6 +338,38 @@
           }
         ]
       }
+    ],
+    "Vuetify": [
+      {
+        "id": 14,
+        "name": "PinkZebra",
+        "position_occupied": "Full Stack",
+        "client": {
+          "type": "company",
+          "name": "Nitza",
+          "logo": "logos/nitza.svg"
+        },
+        "description": [
+          "Contribuí significativamente al mantenimiento y mejora del sitio web administrativo de PinkZebra, una plataforma crucial para la gestión de datos y resultados de múltiples vendedores.",
+          "Mi trabajo se centró en fortalecer la seguridad del sistema mediante la implementación de un control de acceso basado en roles (RBAC) utilizando Middleware, garantizando que solo los usuarios autorizados pudieran acceder a información sensible.",
+          "Desarrollé la lógica para visualizar la jerarquía organizacional, permitiendo una comprensión clara de las relaciones entre los miembros de la empresa. Además, me encargué del mantenimiento y la optimización de diversas funcionalidades esenciales para el funcionamiento del sitio web.",
+          "Documenté exhaustivamente cada paso del desarrollo utilizando Swagger, facilitando la colaboración y el mantenimiento a largo plazo. Implementé pruebas unitarias para asegurar la estabilidad y fiabilidad de las nuevas secciones de código. Integré las vistas de cada funcionalidad con el frontend desarrollado en Vuetify, asegurando una experiencia de usuario coherente y fluida, y las conecté correctamente con el backend en Django Rest Framework.",
+          "Destaco la implementación en Vue del árbol de jerarquía de la organización, que incluía paginación por niveles, optimización de llamadas al backend para minimizar la carga del árbol recursivo y la carga de nodos solo a petición del usuario. Este proyecto demostró mi capacidad para trabajar en un entorno complejo, abordando tanto el frontend como el backend, y aplicando mis habilidades en seguridad, optimización y documentación."
+          ],
+        "technologies": [
+          "Django",
+          "Django Rest Framework",
+          "Flask",
+          "SQLServer",
+          "Vue",
+          "Vuetify",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ],
+        "links": [],
+        "demo": []
+      }
     ]
   },
   "education": [
