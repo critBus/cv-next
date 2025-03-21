@@ -1,6 +1,6 @@
 import React from 'react';
-import { 
-  SiJavascript, SiTypescript, SiReact, SiNextdotjs, 
+import {
+  SiJavascript, SiTypescript, SiReact, SiNextdotjs,
   SiNodedotjs, SiExpress, SiPython, SiDjango,
   SiMongodb, SiPostgresql, SiMysql, SiNeo4J,
   SiTailwindcss, SiBootstrap, SiGit, SiDocker,
@@ -47,22 +47,21 @@ interface TechBadgeProps {
   variant?: 'default' | 'filter' | 'compact';
 }
 
-const TechBadge: React.FC<TechBadgeProps> = ({ 
-  tech, 
-  onClick, 
+const TechBadge: React.FC<TechBadgeProps> = ({
+  tech,
+  onClick,
   selected = false,
   variant = 'default'
 }) => {
   const icon = iconMap[tech];
-  
+
   const baseStyles = "flex items-center gap-2 font-medium transition-all transform";
   const variants = {
     default: "px-3 py-1.5 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm hover:scale-105",
-    filter: `px-4 py-1.5 rounded-full text-sm ${
-      selected 
-        ? 'bg-blue-600 text-white shadow-md' 
+    filter: `px-4 py-1.5 rounded-full text-sm ${selected
+        ? 'bg-blue-600 text-white shadow-md'
         : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-    }`,
+      }`,
     compact: "px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-sm hover:bg-gray-200 dark:hover:bg-gray-600"
   };
 
