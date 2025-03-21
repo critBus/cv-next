@@ -356,19 +356,29 @@
       "TypeScript",
       "Python",
       "Java",
-      "C#"
+      "C#",
+      "Node.js"
     ],
-    "Frameworks": [
+    "Frontend": [
       "React",
       "Next.js",
-      "Node.js",
+      "JavaScript",
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "Backend": [
+      "Django",
       "Django Rest Framework",
       "Flask"
     ],
     "Herramientas": [
       "Git",
       "Github",
-      "Docker"
+      "Docker",
+      "Postman"
     ],
     "Bases de Datos": [
       "PostgreSQL",

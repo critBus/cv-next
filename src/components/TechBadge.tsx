@@ -6,9 +6,11 @@ import {
   SiMongodb, SiPostgresql, SiMysql, SiNeo4J,
   SiTailwindcss, SiBootstrap, SiGit, SiDocker,
   SiCss3, SiHtml5, SiTensorflow, SiKeras,
-  SiVuedotjs, SiVuetify
+  SiVuedotjs, SiVuetify, SiGithub, SiPostman,
+  SiOpenjdk, SiDotnet
 } from 'react-icons/si';
 import { BiBrain } from 'react-icons/bi';
+import { DiMsqlServer } from 'react-icons/di';
 
 type IconMapType = {
   [key: string]: (selected?: boolean) => React.ReactNode;
@@ -22,6 +24,8 @@ const iconMap: IconMapType = {
   'Node.js': () => <SiNodedotjs className="text-[#339933]" />,
   'Express': () => <SiExpress className="text-gray-900 dark:text-white" />,
   'Python': () => <SiPython className="text-[#3776AB]" />,
+  'Java': () => <SiOpenjdk className="text-[#007396]" />,
+  'C#': () => <SiDotnet className="text-[#512BD4]" />,
   'Django': () => <SiDjango className="text-[#092E20]" />,
   'Django Rest Framework': (selected) => (
     <div className="w-5 h-5 relative flex-shrink-0">
@@ -33,14 +37,18 @@ const iconMap: IconMapType = {
       />
     </div>
   ),
+  'Flask': () => <Image src="/flask.svg" alt="Flask" width={20} height={20} className="dark:invert" />,
   'MongoDB': () => <SiMongodb className="text-[#47A248]" />,
   'PostgreSQL': () => <SiPostgresql className="text-[#4169E1]" />,
+  'SQLServer': () => <DiMsqlServer className="text-[#CC2927]" />,
   'MySQL': () => <SiMysql className="text-[#4479A1]" />,
   'Neo4j': () => <SiNeo4J className="text-[#4581C3]" />,
   'Tailwind CSS': () => <SiTailwindcss className="text-[#06B6D4]" />,
   'Bootstrap': () => <SiBootstrap className="text-[#7952B3]" />,
   'Git': () => <SiGit className="text-[#F05032]" />,
+  'Github': () => <SiGithub className="text-gray-900 dark:text-white" />,
   'Docker': () => <SiDocker className="text-[#2496ED]" />,
+  'Postman': () => <SiPostman className="text-[#FF6C37]" />,
   'CSS': () => <SiCss3 className="text-[#1572B6]" />,
   'HTML': () => <SiHtml5 className="text-[#E34F26]" />,
   'IA': () => <BiBrain className="text-[#00A67D]" />,
