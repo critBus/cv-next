@@ -2,6 +2,9 @@ import React from 'react';
 import TechBadge from './TechBadge';
 import cvData from '@/data/cv.json';
 
+// Configurable icon size - you can adjust this value to change all icons at once
+const ICON_SIZE: 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl' = 'text-2xl';
+
 const TechStackSection: React.FC = () => {
   const { skills } = cvData;
 
@@ -19,8 +22,12 @@ const TechStackSection: React.FC = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {categorySkills.map((skill: string, skillIdx: number) => (
-                <TechBadge key={skillIdx} tech={skill} variant="compact" />
-
+                <TechBadge 
+                  key={skillIdx} 
+                  tech={skill} 
+                  variant="compact" 
+                  iconSize={ICON_SIZE}
+                />
               ))}
             </div>
           </div>
