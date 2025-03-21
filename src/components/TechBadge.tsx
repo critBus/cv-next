@@ -38,9 +38,9 @@ const iconMap: IconMapType = {
     const sizeClass = size as 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl';
     return (
       <div className={`relative flex-shrink-0 ${sizeMap[sizeClass || 'text-xl']}`}>
-        <Image 
-          src="/Django REST.svg" 
-          alt="Django REST Framework" 
+        <Image
+          src="/Django REST.svg"
+          alt="Django REST Framework"
           fill
           className={`object-contain ${selected ? 'invert' : 'dark:invert'}`}
         />
@@ -58,9 +58,9 @@ const iconMap: IconMapType = {
     const sizeClass = size as 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl';
     return (
       <div className={`relative flex-shrink-0 ${sizeMap[sizeClass || 'text-xl']}`}>
-        <Image 
-          src="/flask.svg" 
-          alt="Flask" 
+        <Image
+          src="/flask.svg"
+          alt="Flask"
           fill
           className="object-contain dark:invert"
         />
@@ -111,7 +111,7 @@ const TechBadge: React.FC<TechBadgeProps> = ({
     filter: `px-4 py-1.5 rounded-full text-sm ${selected
       ? 'bg-blue-600 text-white shadow-md'
       : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-    }`,
+      }`,
     compact: "flex flex-col items-center p-3 rounded-lg bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
   };
 

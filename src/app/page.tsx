@@ -4,6 +4,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import TechStackSection from "@/components/TechStackSection";
+import ThesisSection from "@/components/ThesisSection";
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -32,6 +33,7 @@ export default function Home() {
         </div>
       </div>
       <EducationSection />
+      <ThesisSection />
     </>
   );
 }

@@ -4,7 +4,7 @@ import TechBadge from './TechBadge';
 import Image from 'next/image';
 
 interface Company {
-  type: 'company' | 'personal' | 'student';
+  type: string;
   name: string;
   logo?: string;
 }
