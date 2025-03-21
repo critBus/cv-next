@@ -278,6 +278,10 @@
         "id": 11,
         "name": "Resolviste",
         "position_occupied": "Backend",
+        "client": {
+          "type": "company",
+          "name": "GODJANGO"
+        },
         "description": [
           "Participe en las etapas iniciales del sitio web llamado Resolviste que tenía como intención final proveer de una plataforma intermediaria de remesas entre revendedores y clientes finales, ofreciéndole las herramientas necesarias a ambos actores del negocio.",
           "La api se desarrolló mediante django rest framework, documentada por medio de swagger, con una base de datos en Postgresql, para la seguridad se escogió a JWT Authentication, como plataforma de pago se planeaba usar a Stripe, para la administración se utilizó a jazzmin. La estabilidad de la api se garantizaba por medio de pruebas unitarias.",
