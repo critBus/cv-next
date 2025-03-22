@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import cvData from "@/data/cv.json";
 import ExperienceSection from "@/components/ExperienceSection";
-import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import TechStackSection from "@/components/TechStackSection";
 import ThesisSection from "@/components/ThesisSection";

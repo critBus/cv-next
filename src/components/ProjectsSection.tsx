@@ -16,7 +16,7 @@ interface Project {
   }[];
   position_occupied: string;
   client?: {
-    type: 'personal' | 'student' | 'company';
+    type: string;
     name?: string;
     logo?: string;
   };

@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import TechBadge from './TechBadge';
 import { FaGooglePlay, FaGlobe, FaLaptopCode, FaServer, FaCode, FaUser, FaGraduationCap, FaBuilding } from 'react-icons/fa';
@@ -10,7 +9,7 @@ interface DemoLink {
 }
 
 interface Client {
-  type: 'personal' | 'student' | 'company';
+  type: string;
   name?: string;
   logo?: string;
 }
@@ -25,14 +24,14 @@ interface ProjectCardProps {
   client?: Client;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ 
-  name, 
-  description, 
-  technologies, 
-  links, 
-  demo, 
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  name,
+  description,
+  technologies,
+  links,
+  demo,
   position_occupied,
-  client 
+  client
 }) => {
   const getDemoIcon = (type: string) => {
     switch (type) {
