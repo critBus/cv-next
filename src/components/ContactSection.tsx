@@ -9,7 +9,7 @@ const ContactSection = () => {
   const contactItems = [
     { icon: <MdEmail className="text-2xl" />, label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
     { icon: <FaWhatsapp className="text-2xl" />, label: 'WhatsApp', value: contact.phone, href: `https://wa.me/${contact.phone.replace(/[^0-9]/g, '')}` },
-    { icon: <FaLinkedin className="text-2xl" />, label: 'LinkedIn', value: '@rene-lazaro-collado-arteaga-447335245', href: contact.linkedin },
+    { icon: <FaLinkedin className="text-2xl" />, label: 'LinkedIn', value: '@rene-lazaro-collado-arteaga', href: contact.linkedin },
     { icon: <FaGithub className="text-2xl" />, label: 'GitHub', value: '@critBus', href: contact.github },
     { icon: <MdLocationOn className="text-2xl" />, label: 'Ubicación', value: contact.location },
   ];
