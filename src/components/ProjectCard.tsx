@@ -1,7 +1,16 @@
-import React from 'react';
-import Image from 'next/image';
-import TechBadge from './TechBadge';
-import { FaGooglePlay, FaGlobe, FaLaptopCode, FaServer, FaCode, FaUser, FaGraduationCap, FaBuilding } from 'react-icons/fa';
+import React from "react";
+import Image from "next/image";
+import TechBadge from "./TechBadge";
+import {
+  FaGooglePlay,
+  FaGlobe,
+  FaLaptopCode,
+  FaServer,
+  FaCode,
+  FaUser,
+  FaGraduationCap,
+  FaBuilding,
+} from "react-icons/fa";
 
 interface DemoLink {
   type: string;
@@ -31,13 +40,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   links,
   demo,
   position_occupied,
-  client
+  client,
 }) => {
   const getDemoIcon = (type: string) => {
     switch (type) {
-      case 'Google Play Store':
+      case "Google Play Store":
         return <FaGooglePlay className="inline mr-1" />;
-      case 'Web':
+      case "Web":
         return <FaGlobe className="inline mr-1" />;
       default:
         return null;
@@ -46,11 +55,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   const getPositionIcon = () => {
     switch (position_occupied) {
-      case 'Frontend':
+      case "Frontend":
         return <FaLaptopCode className="inline mr-1" />;
-      case 'Backend':
+      case "Backend":
         return <FaServer className="inline mr-1" />;
-      case 'Full Stack':
+      case "Full Stack":
         return <FaCode className="inline mr-1" />;
       default:
         return null;
@@ -61,23 +70,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     if (!client) return null;
 
     switch (client.type) {
-      case 'personal':
+      case "personal":
         return (
-          <span className="flex items-center text-gray-600 dark:text-gray-300 text-sm">
+          <span className="flex items-center text-gray-300 text-sm">
             <FaUser className="inline mr-1" />
             Proyecto Personal
           </span>
         );
-      case 'student':
+      case "student":
         return (
-          <span className="flex items-center text-gray-600 dark:text-gray-300 text-sm">
+          <span className="flex items-center text-gray-300 text-sm">
             <FaGraduationCap className="inline mr-1" />
             Proyecto Estudiantil
           </span>
         );
-      case 'company':
+      case "company":
         return (
-          <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300 text-sm">
+          <div className="flex items-center gap-2 text-gray-300 text-sm">
             {client.logo ? (
               <Image
                 src={client.logo}
@@ -98,13 +107,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+    <div className="bg-gray-800 shadow-md rounded-lg p-6">
       <div className="flex justify-between items-start mb-4">
         <div className="space-y-2">
           <h3 className="text-xl font-bold">{name}</h3>
           {getClientInfo()}
         </div>
-        <span className="text-gray-600 dark:text-gray-300 flex items-center text-sm">
+        <span className="text-gray-300 flex items-center text-sm">
           {getPositionIcon()}
           {position_occupied}
         </span>
@@ -114,24 +123,37 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <TechBadge key={index} tech={tech} />
         ))}
       </div>
-      <ul className="text-gray-600 dark:text-gray-300 mb-4 list-disc list-inside">
-        {Array.isArray(description) ? description.map((point, index) => (
-          <li key={index}>{point}</li>
-        )) : <li>{description}</li>}
+      <ul className="text-gray-300 mb-4 list-disc list-inside">
+        {Array.isArray(description) ? (
+          description.map((point, index) => <li key={index}>{point}</li>)
+        ) : (
+          <li>{description}</li>
+        )}
       </ul>
 
       <div className="flex gap-4">
-        {links && links.length > 0 && links.map((link, index) => (
-          <a key={index} href={link} className="text-blue-500 hover:underline">
-            {`Repositorio ${links.length > 1 ? (index + 1) : ''}`}
-          </a>
-        ))}
-        {demo && demo.map((demoLink, index) => (
-          <a key={index} href={demoLink.url} className="text-blue-500 hover:underline flex items-center">
-            {getDemoIcon(demoLink.type)}
-            {demoLink.type}
-          </a>
-        ))}
+        {links &&
+          links.length > 0 &&
+          links.map((link, index) => (
+            <a
+              key={index}
+              href={link}
+              className="text-blue-500 hover:underline"
+            >
+              {`Repositorio ${links.length > 1 ? index + 1 : ""}`}
+            </a>
+          ))}
+        {demo &&
+          demo.map((demoLink, index) => (
+            <a
+              key={index}
+              href={demoLink.url}
+              className="text-blue-500 hover:underline flex items-center"
+            >
+              {getDemoIcon(demoLink.type)}
+              {demoLink.type}
+            </a>
+          ))}
       </div>
     </div>
   );

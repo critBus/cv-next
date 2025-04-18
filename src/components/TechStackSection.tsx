@@ -1,9 +1,10 @@
-import React from 'react';
-import TechBadge from './TechBadge';
-import cvData from '@/data/cv.json';
+import React from "react";
+import TechBadge from "./TechBadge";
+import cvData from "@/data/cv.json";
 
 // Configurable icon size - you can adjust this value to change all icons at once
-const ICON_SIZE: 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl' = 'text-2xl';
+const ICON_SIZE: "text-lg" | "text-xl" | "text-2xl" | "text-3xl" | "text-4xl" =
+  "text-2xl";
 
 const TechStackSection: React.FC = () => {
   const { skills } = cvData;
@@ -15,17 +16,17 @@ const TechStackSection: React.FC = () => {
         {Object.entries(skills).map(([category, categorySkills], idx) => (
           <div
             key={idx}
-            className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
+            className="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow"
           >
-            <h3 className="text-xl text-center font-semibold mb-4 text-blue-600 dark:text-blue-400">
+            <h3 className="text-xl text-center font-semibold mb-4 text-blue-400">
               {category}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {categorySkills.map((skill: string, skillIdx: number) => (
-                <TechBadge 
-                  key={skillIdx} 
-                  tech={skill} 
-                  variant="compact" 
+                <TechBadge
+                  key={skillIdx}
+                  tech={skill}
+                  variant="compact"
                   iconSize={ICON_SIZE}
                 />
               ))}
