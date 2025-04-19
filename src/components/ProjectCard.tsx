@@ -139,6 +139,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               key={index}
               href={link}
               className="text-blue-500 hover:underline"
+              target="_blank"
             >
               {`Repositorio ${links.length > 1 ? index + 1 : ""}`}
             </a>
@@ -149,6 +150,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               key={index}
               href={demoLink.url}
               className="text-blue-500 hover:underline flex items-center"
+              target="_blank"
             >
               {getDemoIcon(demoLink.type)}
               {demoLink.type}
