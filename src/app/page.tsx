@@ -21,7 +21,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-6">Proyectos Destacados</h2>
         <div className="flex justify-center">
           <Link
-            href="/projects"
+            href="/projects#ProjectSection"
             className="inline-flex items-center bg-gray-800 rounded-full border border-gray-700 px-6 py-3 text-blue-500 hover:text-blue-700 hover:border-blue-500 transition-colors group"
           >
             <span>Ver todos los proyectos</span>

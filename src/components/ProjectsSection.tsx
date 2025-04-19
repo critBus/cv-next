@@ -123,7 +123,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   }, []);
 
   return (
-    <section className="w-full">
+    <section className="w-full" id="ProjectSection">
       <h2 className="text-3xl font-bold mb-8 text-center">Proyectos</h2>
 
       {/* Filters */}
