@@ -243,6 +243,43 @@
           "https://github.com/critBus/Nomina"
         ],
         "demo": []
+      },
+      {
+        "id": 15,
+        "name": "Gestión Empresarial Municipal",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "En este proyecto se gestionan los datos de distintas entidades asociadas a una empresa general generando reportes pdf de cada uno de sus datos relevantes. ",
+          "Este Proyecto fue desarrollado en django utilizando jazzmin, para embellecer la administración del sistema. Se utilizo reportbro para la generación de los pdf. Su base de datos fue desarrollada en postgresql."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/grupo_empresarial_django"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://grupo-empresarial-django.onrender.com",
+            "test":{
+              "users_test":{
+                "username":"admin",
+                "password":"123"
+                },
+                "description":"Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+            
+          }
+        ]
       }
     ],
     "Django Rest Framework": [
