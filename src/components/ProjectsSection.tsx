@@ -137,6 +137,10 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
             <h3 className="text-lg font-semibold mb-3 text-center">
               Tecnologías
             </h3>
+            <p className="text-sm text-gray-400 text-center mt-2 mb-4">
+              Seleccione las tecnologías para buscar proyectos que utilicen un
+              conjunto específico
+            </p>
             <div className="flex flex-wrap gap-2 justify-center">
               {allTechnologies.map((tech) => (
                 <TechBadge
