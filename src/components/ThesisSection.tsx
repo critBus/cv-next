@@ -31,11 +31,35 @@ const ThesisSection: React.FC = () => {
               <div className="flex-1">
                 <div className="flex items-start gap-3">
                   <div>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 flex-wrap">
                       <FaUniversity className="text-2xl text-blue-400 group-hover:scale-110 transition-transform flex-shrink-0" />
                       <h3 className="text-xl font-semibold text-white">
                         {thesis.title}
                       </h3>
+                      <div className="grow text-right items-end flex flex-col  gap-4 text-gray-400">
+                        {thesis.links.length > 0 && (
+                          <a
+                            href={thesis.links[0]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                          >
+                            <FaGraduationCap className="text-lg" />
+                            <span>Código Fuente</span>
+                          </a>
+                        )}
+                        {thesis.demo.length > 0 && (
+                          <a
+                            href={thesis.demo[0]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                          >
+                            <FaGraduationCap className="text-lg" />
+                            <span>Demo</span>
+                          </a>
+                        )}
+                      </div>
                     </div>
                     <div className="mt-4 space-y-3">
                       {thesis.description.map((desc, idx) => (
@@ -51,30 +75,6 @@ const ThesisSection: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-col items-center gap-4 text-gray-400">
-                {thesis.links.length > 0 && (
-                  <a
-                    href={thesis.links[0]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-                  >
-                    <FaGraduationCap className="text-lg" />
-                    <span>Código Fuente</span>
-                  </a>
-                )}
-                {thesis.demo.length > 0 && (
-                  <a
-                    href={thesis.demo[0]}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-                  >
-                    <FaGraduationCap className="text-lg" />
-                    <span>Demo</span>
-                  </a>
-                )}
               </div>
             </div>
           </div>
