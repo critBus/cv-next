@@ -198,12 +198,16 @@
           {
             "type": "Web",
             "url": "https://sitiomuseo.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -234,12 +238,16 @@
           {
             "type": "Web",
             "url": "https://gestion-tecnologica.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -270,12 +278,16 @@
           {
             "type": "Web",
             "url": "https://nomina-n17d.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -306,12 +318,16 @@
           {
             "type": "Web",
             "url": "https://grupo-empresarial-django.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -347,12 +363,16 @@
           {
             "type": "Web",
             "url": "https://inventario-fb51.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -389,12 +409,16 @@
           {
             "type": "Web",
             "url": "https://adminfabricaron.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -429,12 +453,16 @@
           {
             "type": "Web",
             "url": "https://labterm.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -471,12 +499,16 @@
           {
             "type": "Web",
             "url": "https://biblioteca-on76.onrender.com",
+            "is_test": true,
             "test": {
               "users_test": {
                 "username": "admin",
                 "password": "123"
               },
-              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
             }
           }
         ]
@@ -539,15 +571,18 @@
         "demo": [
           {
             "type": "Web",
-            "url": "https://lalupapp.com/"
+            "url": "https://lalupapp.com/",
+            "is_test": false
           },
           {
             "type": "Google Play Store",
-            "url": "https://play.google.com/store/apps/details?id=com.wts.lalupa.admin&hl=es"
+            "url": "https://play.google.com/store/apps/details?id=com.wts.lalupa.admin&hl=es",
+            "is_test": false
           },
           {
             "type": "Google Play Store",
-            "url": "https://play.google.com/store/apps/details?id=com.wts.lalupa.client.v3&hl=es"
+            "url": "https://play.google.com/store/apps/details?id=com.wts.lalupa.client.v3&hl=es",
+            "is_test": false
           }
         ]
       },
@@ -654,11 +689,34 @@
         "demo": [
           {
             "type": "Web",
-            "url": "https://notas-estudiantes-back-drf.onrender.com"
+            "url": "https://notas-estudiantes-back-drf.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
           },
           {
             "type": "Web",
-            "url": "https://notas-estudiantes-front-next-5ntw.onrender.com"
+            "url": "https://notas-estudiantes-front-next-5ntw.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales",
+                "Recomiendo, primero abrir el backend, para que el servicio de render despierte."
+              ]
+            }
           }
         ]
       }
