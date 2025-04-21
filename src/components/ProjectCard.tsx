@@ -15,6 +15,14 @@ import {
 interface DemoLink {
   type: string;
   url: string;
+  is_test?: boolean;
+  test?: {
+    users_test?: {
+      username: string;
+      password: string;
+    };
+    description?: string;
+  };
 }
 
 interface Client {
@@ -131,7 +139,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
       </ul>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4">
         {links &&
           links.length > 0 &&
           links.map((link, index) => (
@@ -146,15 +154,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           ))}
         {demo &&
           demo.map((demoLink, index) => (
-            <a
-              key={index}
-              href={demoLink.url}
-              className="text-blue-500 hover:underline flex items-center"
-              target="_blank"
-            >
-              {getDemoIcon(demoLink.type)}
-              {demoLink.type}
-            </a>
+            <div key={index} className="space-y-2">
+              <a
+                href={demoLink.url}
+                className="text-blue-500 hover:underline flex items-center"
+                target="_blank"
+              >
+                {getDemoIcon(demoLink.type)}
+                {demoLink.type}
+                {demoLink.is_test && (
+                  <span className="ml-2 px-2 py-1 text-xs bg-yellow-500 text-black rounded">
+                    Demo de Prueba
+                  </span>
+                )}
+              </a>
+              {demoLink.is_test && demoLink.test && (
+                <div className="text-sm text-gray-400 pl-6">
+                  <p>{demoLink.test.description}</p>
+                  {demoLink.test.users_test && (
+                    <div className="mt-1">
+                      <p>Credenciales de prueba:</p>
+                      <p>Usuario: {demoLink.test.users_test.username}</p>
+                      <p>Contraseña: {demoLink.test.users_test.password}</p>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
           ))}
       </div>
     </div>
