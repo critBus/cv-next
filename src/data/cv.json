@@ -194,7 +194,19 @@
         "links": [
           "https://github.com/critBus/SitioMuseo"
         ],
-        "demo": []
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://sitiomuseo.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+          }
+        ]
       },
       {
         "id": 5,
@@ -216,9 +228,21 @@
           "Bootstrap"
         ],
         "links": [
-          "https://github.com/critBus/AdminFabricaRon"
+          "https://github.com/critBus/GESTION_TECNOLOGICA"
         ],
-        "demo": []
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://gestion-tecnologica.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+          }
+        ]
       },
       {
         "id": 6,
@@ -242,7 +266,19 @@
         "links": [
           "https://github.com/critBus/Nomina"
         ],
-        "demo": []
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://nomina-n17d.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+          }
+        ]
       },
       {
         "id": 15,
@@ -270,14 +306,178 @@
           {
             "type": "Web",
             "url": "https://grupo-empresarial-django.onrender.com",
-            "test":{
-              "users_test":{
-                "username":"admin",
-                "password":"123"
-                },
-                "description":"Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
             }
-            
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Inventario",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé un sistema integral de gestión de inventario utilizando Django como framework principal. El sistema permite la administración completa de productos, categorías, proveedores y movimientos de stock, con funcionalidades avanzadas de reportes y exportación de datos.",
+          "Como aspectos Técnicos Destacables:",
+          "Implementación de arquitectura modular con aplicaciones Django separadas",
+          "Uso de variables de entorno para configuración segura",
+          "Sistema de logging para seguimiento de operaciones",
+          "Integración con servicios de correo electrónico",
+          "Soporte para múltiples entornos (desarrollo/producción)"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/Inventario"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://inventario-fb51.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Sistema de Administración para Fábrica de Ron",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé un sistema integral de administración para una fábrica de ron utilizando Django como framework principal. El sistema está diseñado para gestionar eficientemente todos los aspectos de la producción y distribución del ron.",
+          "Funcionalidades Principales:",
+          "Gestión completa del inventario de insumos y productos terminados",
+          "Control de barriles de añejamiento con seguimiento de fechas y grados alcohólicos",
+          "Administración de marcas y productos con sus especificaciones técnicas",
+          "Sistema de clientes con clasificación por tipo (minorista, mayorista, distribuidor)",
+          "Control de unidades de costo y precios",
+          "Panel de administración personalizado para supervisión de operaciones"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/AdminFabricaRon"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://adminfabricaron.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Sistema de Gestión de Laboratorio Químico para Central Termoeléctrica",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé y lideré un sistema integral de gestión para el laboratorio químico de una central termoeléctrica, utilizando Django como framework principal. El sistema permite el control y seguimiento de:",
+          "Inventario de equipos de laboratorio y su estado",
+          "Gestión de reactivos químicos y soluciones preparadas",
+          "Control de ensayos de agua-vapor y combustibles",
+          "Generación de informes técnicos",
+          "Registro de trabajadores y sus actividades"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/josecarlospr2002/tesis"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://labterm.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Sistema de Gestión de Biblioteca",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé y lideré la implementación de un sistema integral de gestión bibliotecaria utilizando Django como framework principal. El sistema incluye las siguientes funcionalidades:",
+          "Gestión completa de usuarios con diferentes niveles de acceso (administradores, bibliotecarios y usuarios)",
+          "Catálogo digital de libros con búsqueda avanzada y filtros",
+          "Sistema de préstamos con control de fechas y renovaciones",
+          "Gestión de multas y sanciones",
+          "Generación de reportes personalizados",
+          "Panel de administración personalizado con Django Jazzmin",
+          "Importación/exportación de datos en múltiples formatos"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/Biblioteca"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://biblioteca-on76.onrender.com",
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito"
+            }
           }
         ]
       }
