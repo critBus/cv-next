@@ -713,7 +713,8 @@
               },
               "description": [
                 "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales",
+                "Recomiendo, primero abrir el backend, para que el servicio de render despierte."
               ]
             }
           }
