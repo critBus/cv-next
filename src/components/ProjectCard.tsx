@@ -21,7 +21,7 @@ interface DemoLink {
       username: string;
       password: string;
     };
-    description?: string;
+    description?: string[];
   };
 }
 
@@ -170,9 +170,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </a>
               {demoLink.is_test && demoLink.test && (
                 <div className="text-sm text-gray-400 pl-6">
-                  <p>{demoLink.test.description}</p>
+                  {demoLink.test.description && (
+                    <ul className="list-disc list-inside space-y-1">
+                      {demoLink.test.description.map((desc, idx) => (
+                        <li key={idx}>{desc}</li>
+                      ))}
+                    </ul>
+                  )}
                   {demoLink.test.users_test && (
-                    <div className="mt-1">
+                    <div className="mt-2">
                       <p>Credenciales de prueba:</p>
                       <p>Usuario: {demoLink.test.users_test.username}</p>
                       <p>Contraseña: {demoLink.test.users_test.password}</p>
