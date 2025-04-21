@@ -118,86 +118,70 @@
     }
   ],
   "projects": {
-    "Django": [
+    "Vuetify": [
       {
-        "id": 1,
-        "name": "IAEstadosDeMaduracion",
+        "id": 14,
+        "name": "PinkZebra",
         "position_occupied": "Full Stack",
         "client": {
-          "type": "personal"
+          "type": "company",
+          "name": "Nitza",
+          "logo": "logos/nitza.svg"
         },
         "description": [
-          "IAEstadosDeMaduracion es una plataforma web completa en Django, diseñada para proporcionar una plataforma de entrenamiento de sistemas de visión por computadoras basados en redes convolucionales. Esta herramienta permite a los usuarios almacenar y gestionar datasets de imágenes de frutos, que posteriormente pueden ser utilizados para el entrenamiento de una red neuronal convolucional.",
-          "La interfaz de esta plataforma web es muy cómoda y ofrece múltiples opciones de configuración para el entrenamiento de la red neuronal. Estas opciones permiten limitar el número máximo de épocas para el entrenamiento, almacenar solo el mejor modelo obtenido y detener el entrenamiento al alcanzar cierto límite de precisión. Durante el proceso de entrenamiento, IA Estados de Maduración proporciona gráficos que muestran la estadística del progreso, como la precisión y la pérdida.",
-          "Al finalizar el entrenamiento, se muestra una matriz de confusión que presenta la precisión real del modelo neuronal resultante. Una vez que se han creado varios modelos neuronales para diferentes tipos de frutos, la plataforma permite a los usuarios clasificar automáticamente sus imágenes utilizando el modelo neuronal que mejor precisión haya alcanzado para su tipo de fruto. Esta herramienta es una excelente opción para evaluar la calidad de los sembrados de campos agrícolas, ya que no se requiere sacrificar una parte de la producción en el proceso. Es una herramienta útil para científicos, agricultores y cualquier persona interesada en clasificar imágenes de frutos según sus estados de madurez."
+          "Contribuí significativamente al mantenimiento y mejora del sitio web administrativo de PinkZebra, una plataforma crucial para la gestión de datos y resultados de múltiples vendedores.",
+          "Mi trabajo se centró en fortalecer la seguridad del sistema mediante la implementación de un control de acceso basado en roles (RBAC) utilizando Middleware, garantizando que solo los usuarios autorizados pudieran acceder a información sensible.",
+          "Desarrollé la lógica para visualizar la jerarquía organizacional, permitiendo una comprensión clara de las relaciones entre los miembros de la empresa. Además, me encargué del mantenimiento y la optimización de diversas funcionalidades esenciales para el funcionamiento del sitio web.",
+          "Documenté exhaustivamente cada paso del desarrollo utilizando Swagger, facilitando la colaboración y el mantenimiento a largo plazo. Implementé pruebas unitarias para asegurar la estabilidad y fiabilidad de las nuevas secciones de código. Integré las vistas de cada funcionalidad con el frontend desarrollado en Vuetify, asegurando una experiencia de usuario coherente y fluida, y las conecté correctamente con el backend en Django Rest Framework.",
+          "Destaco la implementación en Vue del árbol de jerarquía de la organización, que incluía paginación por niveles, optimización de llamadas al backend para minimizar la carga del árbol recursivo y la carga de nodos solo a petición del usuario. Este proyecto demostró mi capacidad para trabajar en un entorno complejo, abordando tanto el frontend como el backend, y aplicando mis habilidades en seguridad, optimización y documentación."
         ],
         "technologies": [
           "Django",
-          "PostgreSQL",
-          "IA",
-          "TensorFlow",
-          "Keras",
-          "HTML",
-          "CSS",
+          "Django Rest Framework",
+          "Flask",
+          "SQLServer",
+          "Vue",
+          "Vuetify",
           "JavaScript",
-          "Bootstrap"
+          "HTML",
+          "CSS"
         ],
-        "links": [
-          "https://github.com/critBus/IAEstadosDeMaduracion"
-        ],
+        "links": [],
         "demo": []
-      },
+      }
+    ],
+    "Next": [
       {
-        "id": 3,
-        "name": "CinemaManagement",
-        "position_occupied": "Full Stack",
-        "client": {
-          "type": "personal"
-        },
-        "description": [
-          "CinemaManagement es un sitio web creado para la gestión de un negocio de contenido multimedia y la presentación de un catálogo web para publicitar dicho contenido. Esta herramienta proporciona al administrador la posibilidad de integrar los datos de las películas, series, animes, música y juegos que se tengan en el negocio.",
-          "El sitio web cuenta con potentes buscadores que permiten encontrar fácilmente el contenido multimedia deseado, por ejemplo, mediante la búsqueda de películas por actores o viceversa. Además, el uso de Django como plataforma de desarrollo y Postgres como base de datos, proporciona un manejo de la información mucho más organizado y seguro.",
-          "El sistema permite a los clientes explorar fácilmente el catálogo completo del negocio, ver las especificaciones de cada uno de los contenidos multimedia y revisar su disponibilidad. De esta manera, el sistema facilita la administración y venta de contenido multimedia, así como el proceso de selección y compra para los clientes.",
-          "CinemaManagement es una herramienta útil para administradores y propietarios de negocios que desean mejorar la gestión y promoción de su contenido multimedia, al mismo tiempo que ofrecen a sus clientes una experiencia de navegación cómoda y fácil."
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
-        "links": [
-          "https://github.com/BigCatalyst/CinemaManagement"
-        ],
-        "demo": []
-      },
-      {
-        "id": 4,
-        "name": "MuseoJaruqueño",
+        "id": 12,
+        "name": "Horizonte Académico",
         "position_occupied": "Full Stack",
         "client": {
           "type": "student"
         },
         "description": [
-          "Se trata de un sitio web en el que colaboré en su creación, usando la tecnología Django. Este sitio está diseñado para administrar de manera efectiva la información del museo local y permitir que los trabajadores del centro actualicen y manejen información relevante sobre los diferentes artículos que se exhiben en la institución, incluyendo su descripción histórica, origen y ubicación.",
-          "Los visitantes tienen acceso a una descripción detallada del museo y su historia, y pueden obtener información actualizada sobre las exposiciones y actividades que involucran a la institución. Mi contribución en la creación de este sitio web fue en el diseño y desarrollo del sistema, incluyendo la implementación de lógicas de negocios personalizadas y la creación de funciones para facilitar la administración de la información."
+          "Desarrollé 'Horizonte Académico', una plataforma web completa diseñada para facilitar la gestión académica de estudiantes y su admisión a carreras para la continuidad de su estudio. Este proyecto requirió de una capacidad para crear soluciones web complejas y robustas, abarcando tanto el backend como el frontend.",
+          "Implementé una API RESTful potente utilizando Django Rest Framework, conectada a una base de datos PostgreSQL, garantizando una comunicación eficiente y escalable.La documentación exhaustiva de la API con Swagger facilita la integración y el mantenimiento. Además, mejoré la interfaz de administración de Django con Django Jazzmin, proporcionando una experiencia de usuario intuitiva y atractiva.",
+          "Para el frontend, desarrollé una interfaz de usuario moderna e intuitiva con Next.js y Tailwind CSS, asegurando una experiencia de usuario excepcional en cualquier dispositivo. Implementé un sistema de roles y permisos granular, controlando el acceso y las funcionalidades para estudiantes, profesores y secretarias.",
+          "Las funcionalidades clave incluyen un aula virtual interactiva para la creación y gestión de cursos en línea, carga de recursos, asignación y evaluación de tareas, y comunicación entre profesores y estudiantes. También desarrollé un sistema de gestión de admisiones eficiente y transparente, procesando solicitudes basadas en calificaciones de secundaria, calculando escalafones y asignando carreras universitarias.",
+          "Este proyecto demuestra mi capacidad para trabajar con tecnologías de vanguardia y crear aplicaciones web completas que optimizan los procesos académicos y administrativos."
         ],
         "technologies": [
           "Django",
+          "Django Rest Framework",
           "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
+          "Node.js",
+          "React",
+          "Next.js",
+          "Tailwind CSS"
         ],
         "links": [
-          "https://github.com/critBus/SitioMuseo"
+          "https://github.com/critBus/notas_estudiantes_back_drf",
+          "https://github.com/BigCatalyst/notas_estudiantes_front_next"
         ],
         "demo": [
           {
             "type": "Web",
-            "url": "https://sitiomuseo.onrender.com",
+            "url": "https://notas-estudiantes-back-drf.onrender.com",
             "is_test": true,
             "test": {
               "users_test": {
@@ -209,35 +193,10 @@
                 "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
               ]
             }
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "name": "Gestión Instituciones",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "Sitio web para la gestión de la información sobre las instituciones productivas y tecnologías existentes en el país. En el se permite a sus clientes la visualización de la ubicación geográfica de las instituciones, así como la obtención de los datos filtrados y organizados en formatos como PDF o EXEL.",
-          "Para el desarrollo de este proyecto se utilizó Django. Para el frontend del cliente se utilizó bootstrap 5, con Leaflet y amCharts para mostrar la ubicación geográfica de las instituciones. Para el frontend de la administración se utilizó las herramientas que provee django. Para almacenar los datos se utilizó PostgreSQL."
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/critBus/GESTION_TECNOLOGICA"
-        ],
-        "demo": [
+          },
           {
             "type": "Web",
-            "url": "https://gestion-tecnologica.onrender.com",
+            "url": "https://notas-estudiantes-front-next-5ntw.onrender.com",
             "is_test": true,
             "test": {
               "users_test": {
@@ -246,268 +205,8 @@
               },
               "description": [
                 "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": 6,
-        "name": "Gestion De Nomina Salarial",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "Sitio web para la gestión y calculo del salario de los trabajadores de una institución cubana teniendo en cuenta las múltiples reglas a seguir para este proceso que dificultan su implementación. El sitio web gestionaba los datos a los trabajadores tales como la asistencia, las licencias de maternidad, certificados médicos , utilidades anuales y mensuales y con toda esta información ofrecía reportes que eran enviados al personal interesado.",
-          "Para su implementación se utilizó Postgresql como base de datos, jazzmin como plantilla visual para mejorar la experiencia del usuario y reportbro para que los reportes tuvieran un formato en pdf personalizado según los requerimientos de la entidad"
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/critBus/Nomina"
-        ],
-        "demo": [
-          {
-            "type": "Web",
-            "url": "https://nomina-n17d.onrender.com",
-            "is_test": true,
-            "test": {
-              "users_test": {
-                "username": "admin",
-                "password": "123"
-              },
-              "description": [
-                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": 15,
-        "name": "Gestión Empresarial Municipal",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "En este proyecto se gestionan los datos de distintas entidades asociadas a una empresa general generando reportes pdf de cada uno de sus datos relevantes. ",
-          "Este Proyecto fue desarrollado en django utilizando jazzmin, para embellecer la administración del sistema. Se utilizo reportbro para la generación de los pdf. Su base de datos fue desarrollada en postgresql."
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/critBus/grupo_empresarial_django"
-        ],
-        "demo": [
-          {
-            "type": "Web",
-            "url": "https://grupo-empresarial-django.onrender.com",
-            "is_test": true,
-            "test": {
-              "users_test": {
-                "username": "admin",
-                "password": "123"
-              },
-              "description": [
-                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": 16,
-        "name": "Inventario",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "Desarrollé un sistema integral de gestión de inventario utilizando Django como framework principal. El sistema permite la administración completa de productos, categorías, proveedores y movimientos de stock, con funcionalidades avanzadas de reportes y exportación de datos.",
-          "Como aspectos Técnicos Destacables:",
-          "Implementación de arquitectura modular con aplicaciones Django separadas",
-          "Uso de variables de entorno para configuración segura",
-          "Sistema de logging para seguimiento de operaciones",
-          "Integración con servicios de correo electrónico",
-          "Soporte para múltiples entornos (desarrollo/producción)"
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/critBus/Inventario"
-        ],
-        "demo": [
-          {
-            "type": "Web",
-            "url": "https://inventario-fb51.onrender.com",
-            "is_test": true,
-            "test": {
-              "users_test": {
-                "username": "admin",
-                "password": "123"
-              },
-              "description": [
-                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": 17,
-        "name": "Sistema de Administración para Fábrica de Ron",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "Desarrollé un sistema integral de administración para una fábrica de ron utilizando Django como framework principal. El sistema está diseñado para gestionar eficientemente todos los aspectos de la producción y distribución del ron.",
-          "Funcionalidades Principales:",
-          "Gestión completa del inventario de insumos y productos terminados",
-          "Control de barriles de añejamiento con seguimiento de fechas y grados alcohólicos",
-          "Administración de marcas y productos con sus especificaciones técnicas",
-          "Sistema de clientes con clasificación por tipo (minorista, mayorista, distribuidor)",
-          "Control de unidades de costo y precios",
-          "Panel de administración personalizado para supervisión de operaciones"
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/critBus/AdminFabricaRon"
-        ],
-        "demo": [
-          {
-            "type": "Web",
-            "url": "https://adminfabricaron.onrender.com",
-            "is_test": true,
-            "test": {
-              "users_test": {
-                "username": "admin",
-                "password": "123"
-              },
-              "description": [
-                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": 18,
-        "name": "Sistema de Gestión de Laboratorio Químico para Central Termoeléctrica",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "Desarrollé y lideré un sistema integral de gestión para el laboratorio químico de una central termoeléctrica, utilizando Django como framework principal. El sistema permite el control y seguimiento de:",
-          "Inventario de equipos de laboratorio y su estado",
-          "Gestión de reactivos químicos y soluciones preparadas",
-          "Control de ensayos de agua-vapor y combustibles",
-          "Generación de informes técnicos",
-          "Registro de trabajadores y sus actividades"
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/josecarlospr2002/tesis"
-        ],
-        "demo": [
-          {
-            "type": "Web",
-            "url": "https://labterm.onrender.com",
-            "is_test": true,
-            "test": {
-              "users_test": {
-                "username": "admin",
-                "password": "123"
-              },
-              "description": [
-                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": 19,
-        "name": "Sistema de Gestión de Biblioteca",
-        "client": {
-          "type": "student"
-        },
-        "position_occupied": "Full Stack",
-        "description": [
-          "Desarrollé y lideré la implementación de un sistema integral de gestión bibliotecaria utilizando Django como framework principal. El sistema incluye las siguientes funcionalidades:",
-          "Gestión completa de usuarios con diferentes niveles de acceso (administradores, bibliotecarios y usuarios)",
-          "Catálogo digital de libros con búsqueda avanzada y filtros",
-          "Sistema de préstamos con control de fechas y renovaciones",
-          "Gestión de multas y sanciones",
-          "Generación de reportes personalizados",
-          "Panel de administración personalizado con Django Jazzmin",
-          "Importación/exportación de datos en múltiples formatos"
-        ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Bootstrap"
-        ],
-        "links": [
-          "https://github.com/critBus/Biblioteca"
-        ],
-        "demo": [
-          {
-            "type": "Web",
-            "url": "https://biblioteca-on76.onrender.com",
-            "is_test": true,
-            "test": {
-              "users_test": {
-                "username": "admin",
-                "password": "123"
-              },
-              "description": [
-                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales",
+                "Recomiendo, primero abrir el backend, para que el servicio de render despierte."
               ]
             }
           }
@@ -658,38 +357,90 @@
         "demo": []
       }
     ],
-    "Next": [
+    "Django": [
       {
-        "id": 12,
-        "name": "Horizonte Académico",
+        "id": 1,
+        "name": "IAEstadosDeMaduracion",
         "position_occupied": "Full Stack",
         "client": {
-          "type": "student"
+          "type": "personal"
         },
         "description": [
-          "Desarrollé 'Horizonte Académico', una plataforma web completa diseñada para facilitar la gestión académica de estudiantes y su admisión a carreras para la continuidad de su estudio. Este proyecto requirió de una capacidad para crear soluciones web complejas y robustas, abarcando tanto el backend como el frontend.",
-          "Implementé una API RESTful potente utilizando Django Rest Framework, conectada a una base de datos PostgreSQL, garantizando una comunicación eficiente y escalable.La documentación exhaustiva de la API con Swagger facilita la integración y el mantenimiento. Además, mejoré la interfaz de administración de Django con Django Jazzmin, proporcionando una experiencia de usuario intuitiva y atractiva.",
-          "Para el frontend, desarrollé una interfaz de usuario moderna e intuitiva con Next.js y Tailwind CSS, asegurando una experiencia de usuario excepcional en cualquier dispositivo. Implementé un sistema de roles y permisos granular, controlando el acceso y las funcionalidades para estudiantes, profesores y secretarias.",
-          "Las funcionalidades clave incluyen un aula virtual interactiva para la creación y gestión de cursos en línea, carga de recursos, asignación y evaluación de tareas, y comunicación entre profesores y estudiantes. También desarrollé un sistema de gestión de admisiones eficiente y transparente, procesando solicitudes basadas en calificaciones de secundaria, calculando escalafones y asignando carreras universitarias.",
-          "Este proyecto demuestra mi capacidad para trabajar con tecnologías de vanguardia y crear aplicaciones web completas que optimizan los procesos académicos y administrativos."
+          "IAEstadosDeMaduracion es una plataforma web completa en Django, diseñada para proporcionar una plataforma de entrenamiento de sistemas de visión por computadoras basados en redes convolucionales. Esta herramienta permite a los usuarios almacenar y gestionar datasets de imágenes de frutos, que posteriormente pueden ser utilizados para el entrenamiento de una red neuronal convolucional.",
+          "La interfaz de esta plataforma web es muy cómoda y ofrece múltiples opciones de configuración para el entrenamiento de la red neuronal. Estas opciones permiten limitar el número máximo de épocas para el entrenamiento, almacenar solo el mejor modelo obtenido y detener el entrenamiento al alcanzar cierto límite de precisión. Durante el proceso de entrenamiento, IA Estados de Maduración proporciona gráficos que muestran la estadística del progreso, como la precisión y la pérdida.",
+          "Al finalizar el entrenamiento, se muestra una matriz de confusión que presenta la precisión real del modelo neuronal resultante. Una vez que se han creado varios modelos neuronales para diferentes tipos de frutos, la plataforma permite a los usuarios clasificar automáticamente sus imágenes utilizando el modelo neuronal que mejor precisión haya alcanzado para su tipo de fruto. Esta herramienta es una excelente opción para evaluar la calidad de los sembrados de campos agrícolas, ya que no se requiere sacrificar una parte de la producción en el proceso. Es una herramienta útil para científicos, agricultores y cualquier persona interesada en clasificar imágenes de frutos según sus estados de madurez."
         ],
         "technologies": [
           "Django",
-          "Django Rest Framework",
           "PostgreSQL",
-          "Node.js",
-          "React",
-          "Next.js",
-          "Tailwind CSS"
+          "IA",
+          "TensorFlow",
+          "Keras",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
         ],
         "links": [
-          "https://github.com/critBus/notas_estudiantes_back_drf",
-          "https://github.com/BigCatalyst/notas_estudiantes_front_next"
+          "https://github.com/critBus/IAEstadosDeMaduracion"
+        ],
+        "demo": []
+      },
+      {
+        "id": 3,
+        "name": "CinemaManagement",
+        "position_occupied": "Full Stack",
+        "client": {
+          "type": "personal"
+        },
+        "description": [
+          "CinemaManagement es un sitio web creado para la gestión de un negocio de contenido multimedia y la presentación de un catálogo web para publicitar dicho contenido. Esta herramienta proporciona al administrador la posibilidad de integrar los datos de las películas, series, animes, música y juegos que se tengan en el negocio.",
+          "El sitio web cuenta con potentes buscadores que permiten encontrar fácilmente el contenido multimedia deseado, por ejemplo, mediante la búsqueda de películas por actores o viceversa. Además, el uso de Django como plataforma de desarrollo y Postgres como base de datos, proporciona un manejo de la información mucho más organizado y seguro.",
+          "El sistema permite a los clientes explorar fácilmente el catálogo completo del negocio, ver las especificaciones de cada uno de los contenidos multimedia y revisar su disponibilidad. De esta manera, el sistema facilita la administración y venta de contenido multimedia, así como el proceso de selección y compra para los clientes.",
+          "CinemaManagement es una herramienta útil para administradores y propietarios de negocios que desean mejorar la gestión y promoción de su contenido multimedia, al mismo tiempo que ofrecen a sus clientes una experiencia de navegación cómoda y fácil."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "links": [
+          "https://github.com/BigCatalyst/CinemaManagement"
+        ],
+        "demo": []
+      },
+      {
+        "id": 18,
+        "name": "Sistema de Gestión de Laboratorio Químico para Central Termoeléctrica",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé y lideré un sistema integral de gestión para el laboratorio químico de una central termoeléctrica, utilizando Django como framework principal. El sistema permite el control y seguimiento de:",
+          "Inventario de equipos de laboratorio y su estado",
+          "Gestión de reactivos químicos y soluciones preparadas",
+          "Control de ensayos de agua-vapor y combustibles",
+          "Generación de informes técnicos",
+          "Registro de trabajadores y sus actividades"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/josecarlospr2002/tesis"
         ],
         "demo": [
           {
             "type": "Web",
-            "url": "https://notas-estudiantes-back-drf.onrender.com",
+            "url": "https://labterm.onrender.com",
             "is_test": true,
             "test": {
               "users_test": {
@@ -701,10 +452,41 @@
                 "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
               ]
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Sistema de Gestión de Biblioteca",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé y lideré la implementación de un sistema integral de gestión bibliotecaria utilizando Django como framework principal. El sistema incluye las siguientes funcionalidades:",
+          "Gestión completa de usuarios con diferentes niveles de acceso (administradores, bibliotecarios y usuarios)",
+          "Catálogo digital de libros con búsqueda avanzada y filtros",
+          "Sistema de préstamos con control de fechas y renovaciones",
+          "Gestión de multas y sanciones",
+          "Generación de reportes personalizados",
+          "Panel de administración personalizado con Django Jazzmin",
+          "Importación/exportación de datos en múltiples formatos"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/Biblioteca"
+        ],
+        "demo": [
           {
             "type": "Web",
-            "url": "https://notas-estudiantes-front-next-5ntw.onrender.com",
+            "url": "https://biblioteca-on76.onrender.com",
             "is_test": true,
             "test": {
               "users_test": {
@@ -713,44 +495,262 @@
               },
               "description": [
                 "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
-                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales",
-                "Recomiendo, primero abrir el backend, para que el servicio de render despierte."
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
               ]
             }
           }
         ]
-      }
-    ],
-    "Vuetify": [
+      },
       {
-        "id": 14,
-        "name": "PinkZebra",
-        "position_occupied": "Full Stack",
+        "id": 15,
+        "name": "Gestión Empresarial Municipal",
         "client": {
-          "type": "company",
-          "name": "Nitza",
-          "logo": "logos/nitza.svg"
+          "type": "student"
         },
+        "position_occupied": "Full Stack",
         "description": [
-          "Contribuí significativamente al mantenimiento y mejora del sitio web administrativo de PinkZebra, una plataforma crucial para la gestión de datos y resultados de múltiples vendedores.",
-          "Mi trabajo se centró en fortalecer la seguridad del sistema mediante la implementación de un control de acceso basado en roles (RBAC) utilizando Middleware, garantizando que solo los usuarios autorizados pudieran acceder a información sensible.",
-          "Desarrollé la lógica para visualizar la jerarquía organizacional, permitiendo una comprensión clara de las relaciones entre los miembros de la empresa. Además, me encargué del mantenimiento y la optimización de diversas funcionalidades esenciales para el funcionamiento del sitio web.",
-          "Documenté exhaustivamente cada paso del desarrollo utilizando Swagger, facilitando la colaboración y el mantenimiento a largo plazo. Implementé pruebas unitarias para asegurar la estabilidad y fiabilidad de las nuevas secciones de código. Integré las vistas de cada funcionalidad con el frontend desarrollado en Vuetify, asegurando una experiencia de usuario coherente y fluida, y las conecté correctamente con el backend en Django Rest Framework.",
-          "Destaco la implementación en Vue del árbol de jerarquía de la organización, que incluía paginación por niveles, optimización de llamadas al backend para minimizar la carga del árbol recursivo y la carga de nodos solo a petición del usuario. Este proyecto demostró mi capacidad para trabajar en un entorno complejo, abordando tanto el frontend como el backend, y aplicando mis habilidades en seguridad, optimización y documentación."
+          "En este proyecto se gestionan los datos de distintas entidades asociadas a una empresa general generando reportes pdf de cada uno de sus datos relevantes. ",
+          "Este Proyecto fue desarrollado en django utilizando jazzmin, para embellecer la administración del sistema. Se utilizo reportbro para la generación de los pdf. Su base de datos fue desarrollada en postgresql."
         ],
         "technologies": [
           "Django",
-          "Django Rest Framework",
-          "Flask",
-          "SQLServer",
-          "Vue",
-          "Vuetify",
-          "JavaScript",
+          "PostgreSQL",
           "HTML",
-          "CSS"
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
         ],
-        "links": [],
-        "demo": []
+        "links": [
+          "https://github.com/critBus/grupo_empresarial_django"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://grupo-empresarial-django.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Gestión Instituciones",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Sitio web para la gestión de la información sobre las instituciones productivas y tecnologías existentes en el país. En el se permite a sus clientes la visualización de la ubicación geográfica de las instituciones, así como la obtención de los datos filtrados y organizados en formatos como PDF o EXEL.",
+          "Para el desarrollo de este proyecto se utilizó Django. Para el frontend del cliente se utilizó bootstrap 5, con Leaflet y amCharts para mostrar la ubicación geográfica de las instituciones. Para el frontend de la administración se utilizó las herramientas que provee django. Para almacenar los datos se utilizó PostgreSQL."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/GESTION_TECNOLOGICA"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://gestion-tecnologica.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Gestion De Nomina Salarial",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Sitio web para la gestión y calculo del salario de los trabajadores de una institución cubana teniendo en cuenta las múltiples reglas a seguir para este proceso que dificultan su implementación. El sitio web gestionaba los datos a los trabajadores tales como la asistencia, las licencias de maternidad, certificados médicos , utilidades anuales y mensuales y con toda esta información ofrecía reportes que eran enviados al personal interesado.",
+          "Para su implementación se utilizó Postgresql como base de datos, jazzmin como plantilla visual para mejorar la experiencia del usuario y reportbro para que los reportes tuvieran un formato en pdf personalizado según los requerimientos de la entidad"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/Nomina"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://nomina-n17d.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Inventario",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé un sistema integral de gestión de inventario utilizando Django como framework principal. El sistema permite la administración completa de productos, categorías, proveedores y movimientos de stock, con funcionalidades avanzadas de reportes y exportación de datos.",
+          "Como aspectos Técnicos Destacables:",
+          "Implementación de arquitectura modular con aplicaciones Django separadas",
+          "Uso de variables de entorno para configuración segura",
+          "Sistema de logging para seguimiento de operaciones",
+          "Integración con servicios de correo electrónico",
+          "Soporte para múltiples entornos (desarrollo/producción)"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/Inventario"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://inventario-fb51.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Sistema de Administración para Fábrica de Ron",
+        "client": {
+          "type": "student"
+        },
+        "position_occupied": "Full Stack",
+        "description": [
+          "Desarrollé un sistema integral de administración para una fábrica de ron utilizando Django como framework principal. El sistema está diseñado para gestionar eficientemente todos los aspectos de la producción y distribución del ron.",
+          "Funcionalidades Principales:",
+          "Gestión completa del inventario de insumos y productos terminados",
+          "Control de barriles de añejamiento con seguimiento de fechas y grados alcohólicos",
+          "Administración de marcas y productos con sus especificaciones técnicas",
+          "Sistema de clientes con clasificación por tipo (minorista, mayorista, distribuidor)",
+          "Control de unidades de costo y precios",
+          "Panel de administración personalizado para supervisión de operaciones"
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/AdminFabricaRon"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://adminfabricaron.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "MuseoJaruqueño",
+        "position_occupied": "Full Stack",
+        "client": {
+          "type": "student"
+        },
+        "description": [
+          "Se trata de un sitio web en el que colaboré en su creación, usando la tecnología Django. Este sitio está diseñado para administrar de manera efectiva la información del museo local y permitir que los trabajadores del centro actualicen y manejen información relevante sobre los diferentes artículos que se exhiben en la institución, incluyendo su descripción histórica, origen y ubicación.",
+          "Los visitantes tienen acceso a una descripción detallada del museo y su historia, y pueden obtener información actualizada sobre las exposiciones y actividades que involucran a la institución. Mi contribución en la creación de este sitio web fue en el diseño y desarrollo del sistema, incluyendo la implementación de lógicas de negocios personalizadas y la creación de funciones para facilitar la administración de la información."
+        ],
+        "technologies": [
+          "Django",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Bootstrap"
+        ],
+        "links": [
+          "https://github.com/critBus/SitioMuseo"
+        ],
+        "demo": [
+          {
+            "type": "Web",
+            "url": "https://sitiomuseo.onrender.com",
+            "is_test": true,
+            "test": {
+              "users_test": {
+                "username": "admin",
+                "password": "123"
+              },
+              "description": [
+                "Esta es una demo donde puede entrar para probar la app, esta desplegada en render de forma gratuita así que puede que tarde algo en desplegar por como funciona el servicio de render gratuito",
+                "La demo incluye funcionalidades básicas del sistema para que puedas explorar sus características principales"
+              ]
+            }
+          }
+        ]
       }
     ]
   },
