@@ -9,13 +9,13 @@ import { HiArrowRight } from "react-icons/hi";
 
 export const metadata: Metadata = {
   title: "Mi CV - Full Stack Developer",
-  description: "Portfolio profesional de René Lázaro Collado Arteaga - Desarrollador Full Stack especializado en JavaScript, TypeScript, React, Node.js y más.",
+  description:
+    "Portfolio profesional de René Lázaro Collado Arteaga - Desarrollador Full Stack especializado en JavaScript, TypeScript, React, Node.js y más.",
 };
 
 export default function Home() {
   return (
     <>
-      <TechStackSection />
       <div className="mb-16 w-full text-center">
         <h2 className="text-3xl font-bold mb-6">Proyectos Destacados</h2>
         <div className="flex justify-center">
@@ -28,6 +28,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <TechStackSection />
+
       <div className="mb-16 w-full max-w-4xl">
         <ExperienceSection experiences={cvData.experience} />
       </div>
