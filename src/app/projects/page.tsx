@@ -1,7 +1,7 @@
-import React from 'react';
-import ProjectsSection from '@/components/ProjectsSection';
-import cvData from '@/data/cv.json';
-import Link from 'next/link';
+import React from "react";
+import ProjectsSection from "@/components/ProjectsSection";
+import cvData from "@/data/cv.json";
+import Link from "next/link";
 
 export default function ProjectsPage() {
   return (
@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       <div className="flex items-center justify-center mb-6">
         <Link
           href="/"
-          className="inline-flex items-center bg-white dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 px-4 py-2 text-blue-500 hover:text-blue-700 hover:border-blue-500 transition-colors"
+          className="inline-flex items-center bg-gray-800 rounded-full border border-gray-700 px-4 py-2 text-blue-500 hover:text-blue-700 hover:border-blue-500 transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
