@@ -22,7 +22,7 @@
         "logo": "logos/crinnotech.svg"
       },
       "position": "Backend",
-      "startDate": "2025-09",
+      "startDate": "2025-07",
       "endDate": "actualmente",
       "description": [
         "Desarrollador Backend Semi Senior especializado en Django Rest Framework, encargado del mantenimiento y evolución de proyectos internos de la empresa. Experiencia en la creación y optimización de endpoints, así como en el desarrollo y personalización de interfaces administrativas con Django Admin y herramientas complementarias como Unfold, Grappelli, Crispy Forms y django-htmx. Manejo de procesos en segundo plano con Celery y Huey para garantizar la eficiencia y escalabilidad de las aplicaciones."
