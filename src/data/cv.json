@@ -4,7 +4,7 @@
     "title": "Full Stack Developer",
     "email": "renearteaga261998@gmail.com",
     "location": "Habana, Cuba",
-    "summary": "Desarrollador web especializado en el Backend con más de dos años de experiencia en el desarrollo de aplicaciones web y un fuerte interés en la arquitectura y el diseño de software. Capaz de trabajar en equipo o de manera independiente, con gran capacidad de análisis y resolución de problemas. Experiencia en el desarrollo de aplicaciones web usando Django Rest Framework, Flask y su unión con tecnologías frontend como Vue."
+    "summary": "Desarrollador Full-Stack con casi tres años de experiencia en el desarrollo de aplicaciones web, con un fuerte interés en la arquitectura y el diseño de software. Capaz de trabajar en equipo o de manera independiente, con gran capacidad de análisis y resolución de problemas. Experiencia en el desarrollo de aplicaciones backend utilizando Django Rest Framework y Flask, integrando soluciones con tecnologías frontend como Vue y React. En proyectos personales he profundizado en el desarrollo full-stack con Next.js y Prisma, ampliando mis habilidades hacia aplicaciones modernas, escalables y de alto rendimiento."
   },
   "contact": {
     "email": "renearteaga261998@gmail.com",
@@ -14,6 +14,28 @@
     "location": "Habana, Cuba"
   },
   "experience": [
+    {
+      "id": 5,
+      "company": {
+        "type": "company",
+        "name": "crinnotech",
+        "logo": "logos/crinnotech.svg"
+      },
+      "position": "Backend",
+      "startDate": "2025-07",
+      "endDate": "actualmente",
+      "description": [
+        "Desarrollador Backend Semi Senior especializado en Django Rest Framework, encargado del mantenimiento y evolución de proyectos internos de la empresa. Experiencia en la creación y optimización de endpoints, así como en el desarrollo y personalización de interfaces administrativas con Django Admin y herramientas complementarias como Unfold, Grappelli, Crispy Forms y django-htmx. Manejo de procesos en segundo plano con Celery y Huey para garantizar la eficiencia y escalabilidad de las aplicaciones."
+      ],
+      "technologies": [
+        "Django",
+        "Django Rest Framework",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Docker"
+      ]
+    },
     {
       "id": 4,
       "company": {
@@ -55,11 +77,7 @@
         "Desarrollé y desplegué el backend para 'LaLupa', una plataforma que conecta clientes con negocios locales a través de aplicaciones móviles. Implementé una API RESTful robusta utilizando Django Rest Framework, facilitando la gestión de usuarios y negocios. Diseñé e implementé un sistema de autenticación seguro mediante SMS y JWT Authentication, garantizando la seguridad y privacidad de los usuarios. Utilicé PostgreSQL como base de datos, optimizando el almacenamiento y la recuperación de datos. Documenté la API exhaustivamente con Swagger, facilitando la integración y el mantenimiento. Desarrollé pruebas unitarias para asegurar la estabilidad y fiabilidad del sistema. Mejoré la interfaz de administración con Jazzmin, optimizando la experiencia del usuario.",
         "Desarrollé 'Backup Manager', un sistema para almacenar y gestionar copias de seguridad de bases de datos y datos multimedia, utilizando Django REST Framework. Implementé un sistema de almacenamiento seguro para garantizar la integridad y disponibilidad de los datos. Utilicé autenticación JWT basada en el algoritmo RSA para proporcionar un acceso seguro y controlado a los recursos del sistema. Este proyecto se enfocó en la sincronización del estado de los datos para facilitar la recuperación eficiente de aplicaciones en situaciones de emergencia."
       ],
-      "technologies": [
-        "Django",
-        "Django Rest Framework",
-        "PostgreSQL"
-      ]
+      "technologies": ["Django", "Django Rest Framework", "PostgreSQL"]
     },
     {
       "id": 2,
@@ -78,11 +96,7 @@
         "Desarrollé pruebas unitarias para garantizar la estabilidad y fiabilidad del sistema.",
         "Mejoré la interfaz de administración con la plantilla Jazzmin, optimizando la experiencia del usuario."
       ],
-      "technologies": [
-        "Django",
-        "Django Rest Framework",
-        "PostgreSQL"
-      ]
+      "technologies": ["Django", "Django Rest Framework", "PostgreSQL"]
     },
     {
       "id": 1,
@@ -324,11 +338,7 @@
           "Almacenamiento Seguro: Implementé un sistema robusto para el almacenamiento y gestión de copias de seguridad, asegurando la integridad y disponibilidad de los datos.",
           "Autenticación Segura: Utilicé autenticación JWT basada en el algoritmo RSA, proporcionando un acceso seguro y controlado a los recursos del sistema."
         ],
-        "technologies": [
-          "Django",
-          "Django Rest Framework",
-          "PostgreSQL"
-        ],
+        "technologies": ["Django", "Django Rest Framework", "PostgreSQL"],
         "links": [],
         "demo": []
       },
@@ -348,11 +358,7 @@
           "Base de Datos: Utilicé PostgreSQL como base de datos principal, asegurando un manejo eficiente y seguro de los datos.",
           "Interfaz Mejorada: Implementé la plantilla Jazzmin para mejorar la apariencia y usabilidad del panel de administración, optimizando la experiencia del usuario."
         ],
-        "technologies": [
-          "Django",
-          "Django Rest Framework",
-          "PostgreSQL"
-        ],
+        "technologies": ["Django", "Django Rest Framework", "PostgreSQL"],
         "links": [],
         "demo": []
       }
@@ -381,9 +387,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/IAEstadosDeMaduracion"
-        ],
+        "links": ["https://github.com/critBus/IAEstadosDeMaduracion"],
         "demo": []
       },
       {
@@ -399,16 +403,8 @@
           "El sistema permite a los clientes explorar fácilmente el catálogo completo del negocio, ver las especificaciones de cada uno de los contenidos multimedia y revisar su disponibilidad. De esta manera, el sistema facilita la administración y venta de contenido multimedia, así como el proceso de selección y compra para los clientes.",
           "CinemaManagement es una herramienta útil para administradores y propietarios de negocios que desean mejorar la gestión y promoción de su contenido multimedia, al mismo tiempo que ofrecen a sus clientes una experiencia de navegación cómoda y fácil."
         ],
-        "technologies": [
-          "Django",
-          "PostgreSQL",
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
-        "links": [
-          "https://github.com/BigCatalyst/CinemaManagement"
-        ],
+        "technologies": ["Django", "PostgreSQL", "HTML", "CSS", "JavaScript"],
+        "links": ["https://github.com/BigCatalyst/CinemaManagement"],
         "demo": []
       },
       {
@@ -434,9 +430,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/josecarlospr2002/tesis"
-        ],
+        "links": ["https://github.com/josecarlospr2002/tesis"],
         "demo": [
           {
             "type": "Web",
@@ -480,9 +474,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/Biblioteca"
-        ],
+        "links": ["https://github.com/critBus/Biblioteca"],
         "demo": [
           {
             "type": "Web",
@@ -520,9 +512,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/grupo_empresarial_django"
-        ],
+        "links": ["https://github.com/critBus/grupo_empresarial_django"],
         "demo": [
           {
             "type": "Web",
@@ -560,9 +550,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/GESTION_TECNOLOGICA"
-        ],
+        "links": ["https://github.com/critBus/GESTION_TECNOLOGICA"],
         "demo": [
           {
             "type": "Web",
@@ -600,9 +588,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/Nomina"
-        ],
+        "links": ["https://github.com/critBus/Nomina"],
         "demo": [
           {
             "type": "Web",
@@ -645,9 +631,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/Inventario"
-        ],
+        "links": ["https://github.com/critBus/Inventario"],
         "demo": [
           {
             "type": "Web",
@@ -691,9 +675,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/AdminFabricaRon"
-        ],
+        "links": ["https://github.com/critBus/AdminFabricaRon"],
         "demo": [
           {
             "type": "Web",
@@ -731,9 +713,7 @@
           "JavaScript",
           "Bootstrap"
         ],
-        "links": [
-          "https://github.com/critBus/SitioMuseo"
-        ],
+        "links": ["https://github.com/critBus/SitioMuseo"],
         "demo": [
           {
             "type": "Web",
@@ -784,9 +764,7 @@
         "JavaScript",
         "Bootstrap"
       ],
-      "links": [
-        "https://github.com/critBus/IAEstadosDeMaduracion"
-      ],
+      "links": ["https://github.com/critBus/IAEstadosDeMaduracion"],
       "demo": []
     }
   ],
@@ -803,22 +781,9 @@
       "Tailwind CSS",
       "Bootstrap"
     ],
-    "Backend": [
-      "Django",
-      "Django Rest Framework",
-      "Flask"
-    ],
-    "Herramientas": [
-      "Git",
-      "Github",
-      "Docker",
-      "Postman"
-    ],
-    "Bases de Datos": [
-      "PostgreSQL",
-      "SQLServer",
-      "Neo4j"
-    ],
+    "Backend": ["Django", "Django Rest Framework", "Flask"],
+    "Herramientas": ["Git", "Github", "Docker", "Postman"],
+    "Bases de Datos": ["PostgreSQL", "SQLServer", "Neo4j"],
     "Programación": [
       "JavaScript",
       "TypeScript",
@@ -827,10 +792,6 @@
       "C#",
       "Node.js"
     ],
-    "IA": [
-      "Deepface",
-      "TensorFlow",
-      "Keras"
-    ]
+    "IA": ["Deepface", "TensorFlow", "Keras"]
   }
 }

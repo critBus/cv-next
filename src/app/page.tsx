@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <TechStackSection />
       <div className="mb-16 w-full text-center">
         <h2 className="text-3xl font-bold mb-6">Proyectos Destacados</h2>
         <div className="flex justify-center">
@@ -29,6 +28,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <TechStackSection />
+
       <div className="mb-16 w-full max-w-4xl">
         <ExperienceSection experiences={cvData.experience} />
       </div>
